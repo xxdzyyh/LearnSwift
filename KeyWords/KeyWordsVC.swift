@@ -16,7 +16,7 @@ class KeyWordsVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		dataSource = [["in-out","使参数的修改可以保留"]]
+		dataSource = [["InOutVC","inOut使参数的修改可以保留"]]
 		
 		setupTableView()
 		
@@ -56,4 +56,14 @@ class KeyWordsVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
 		
 		return cell!
 	}
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = self.dataSource[indexPath.row] as! NSArray;
+        
+        let className = item[0] as! String
+        
+        let obj = RuntimeHelper.instanceForClassName(className)
+        
+        self.navigationController?.pushViewController(obj as! UIViewController, animated: true)
+    }
 }
