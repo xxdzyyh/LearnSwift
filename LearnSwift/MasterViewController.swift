@@ -13,15 +13,15 @@ class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     var objects = [Array<Any>]()
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         navigationItem.leftBarButtonItem = editButtonItem
         
-        objects = [["MarkDownPreviewVC","MarkDown预览"]];
+        objects = [["MarkDownPreviewVC","MarkDown预览"],
+				   ["KeyWordsVC","swift关键字"]];
     }
-
+	
     // MARK: - Table View
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -48,10 +48,14 @@ class MasterViewController: UITableViewController {
         let className : String = object[0] as! String;
         
         if className.hasSuffix("VC") {
-            
-            let vc = MarkDownPreviewVC();
-            
-            self.navigationController?.pushViewController(vc, animated: true)
+			
+			let nameSpace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
+			let cla : AnyClass = NSClassFromString(nameSpace+"."+className)!
+			let realClass = cla as! UIViewController.Type
+			
+			let vc = realClass.init();
+			
+			self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

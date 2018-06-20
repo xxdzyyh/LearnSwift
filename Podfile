@@ -6,8 +6,9 @@ target 'LearnSwift' do
   use_frameworks!
 
   # Pods for LearnSwift
-  pod "EFMarkdown"
-  pod "Moya"
+  pod 'EFMarkdown'
+  pod 'Moya'
+  pod 'SnapKit'
 
   target 'LearnSwiftTests' do
     inherit! :search_paths
