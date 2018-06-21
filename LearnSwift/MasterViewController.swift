@@ -19,7 +19,8 @@ class MasterViewController: UITableViewController {
 		
         objects = [["MarkDownPreviewVC","MarkDown预览"],
 				   ["KeyWordsVC","swift关键字"],
-				   ["访问控制","http://www.hangge.com/blog/cache/detail_524.html"]];
+				   ["访问控制","http://www.runoob.com/swift/swift-access-control.html"],
+                   ["FeathersVC","swift语言特性"]];
     }
 	
     // MARK: - Table View
@@ -60,7 +61,7 @@ class MasterViewController: UITableViewController {
 			
 			let webviewVC = XFWebViewController();
 			
-			webviewVC.loadURL("http://www.hangge.com/blog/cache/detail_524.html")
+			webviewVC.loadURL("http://www.runoob.com/swift/swift-access-control.html")
 			
 			self.navigationController?.pushViewController(webviewVC, animated: true);
 		}
