@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import SnapKit
 
 class XFWebViewController : UIViewController {
 	
@@ -18,14 +19,22 @@ class XFWebViewController : UIViewController {
 		
 		setupWebView()
 		self.view.addSubview(webView);
+		
+		webView.snp.makeConstraints { (make) in
+			make.edges.equalToSuperview()
+		}
 	}
 	
 	func setupWebView() {
-		webView = WKWebView.init();
-	
+		if webView == nil {
+			webView = WKWebView.init();
+		}
 	}
 	
 	func loadURL(_ url: String) {
+		
+		setupWebView()
+		
 		if url.isEmpty {
 			print("XFWebViewController url isEmpty")
 			return
@@ -38,6 +47,8 @@ class XFWebViewController : UIViewController {
 			return
 		}
 		
-		webView.load(URLRequest.init(url: realURL!))
+		let request = URLRequest(url: realURL!)
+		
+		webView.load(request)
 	}
 }

@@ -16,10 +16,10 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        navigationItem.leftBarButtonItem = editButtonItem
-        
+		
         objects = [["MarkDownPreviewVC","MarkDown预览"],
-				   ["KeyWordsVC","swift关键字"]];
+				   ["KeyWordsVC","swift关键字"],
+				   ["访问控制","http://www.hangge.com/blog/cache/detail_524.html"]];
     }
 	
     // MARK: - Table View
@@ -56,7 +56,14 @@ class MasterViewController: UITableViewController {
 			let vc = realClass.init();
 			
 			self.navigationController?.pushViewController(vc, animated: true)
-        }
+		} else if (className.elementsEqual("访问控制")) {
+			
+			let webviewVC = XFWebViewController();
+			
+			webviewVC.loadURL("http://www.hangge.com/blog/cache/detail_524.html")
+			
+			self.navigationController?.pushViewController(webviewVC, animated: true);
+		}
     }
 }
 
