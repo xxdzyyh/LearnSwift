@@ -17,8 +17,7 @@ class MasterViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 		
-        objects = [["MarkDownPreviewVC","MarkDown预览"],
-				   ["KeyWordsVC","swift关键字"],
+        objects = [["KeyWordsVC","swift关键字"],
 				   ["访问控制","http://www.runoob.com/swift/swift-access-control.html"],
                    ["FeathersVC","swift语言特性"]];
     }
