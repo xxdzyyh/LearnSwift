@@ -8,13 +8,21 @@ PODS:
   - Moya/Core (11.0.2):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
   - Result (3.2.4)
   - SnapKit (4.0.0)
+  - XCGLogger (6.0.2):
+    - XCGLogger/Core (= 6.0.2)
+  - XCGLogger/Core (6.0.2):
+    - ObjcExceptionBridging
 
 DEPENDENCIES:
   - EFMarkdown
   - Moya
   - SnapKit
+  - XCGLogger
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -22,17 +30,21 @@ SPEC REPOS:
     - EFCMark
     - EFMarkdown
     - Moya
+    - ObjcExceptionBridging
     - Result
     - SnapKit
+    - XCGLogger
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   EFCMark: 384f782f489f104c590dc375b9de902de37ebca3
   EFMarkdown: ee89bd6644fca23b9128576d6d87cb2e1c537d89
   Moya: a725035953bc1c0eb1be505ab903984501d82440
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  XCGLogger: c9601cae9a8912de34a58666ba931ed3d624dd31
 
-PODFILE CHECKSUM: 4437109092d3dc8d975425a424fac04561844541
+PODFILE CHECKSUM: cee950042536e6af1025753f2b5b029e157ec8c1
 
 COCOAPODS: 1.5.2

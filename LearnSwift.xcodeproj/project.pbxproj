@@ -21,6 +21,7 @@
 		B8709EE920DB7C0C00CC4247 /* ClosuresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8709EE820DB7C0C00CC4247 /* ClosuresVC.swift */; };
 		B8709EEB20DB7D5B00CC4247 /* FeathersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8709EEA20DB7D5B00CC4247 /* FeathersVC.swift */; };
 		EC8C75B120E1D1ED000BE8F9 /* AppleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C75B020E1D1ED000BE8F9 /* AppleDemo.swift */; };
+		EC8C75B520E21F99000BE8F9 /* XFDemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C75B420E21F99000BE8F9 /* XFDemoTableViewController.swift */; };
 		ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */; };
 		ECE9728E20D9FD6700FB2ED9 /* XFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */; };
 		F58D8D95C7C0AE2BD140F9BE /* Pods_LearnSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */; };
@@ -60,6 +61,7 @@
 		B8709EEA20DB7D5B00CC4247 /* FeathersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeathersVC.swift; sourceTree = "<group>"; };
 		D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8C75B020E1D1ED000BE8F9 /* AppleDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleDemo.swift; sourceTree = "<group>"; };
+		EC8C75B420E21F99000BE8F9 /* XFDemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XFDemoTableViewController.swift; sourceTree = "<group>"; };
 		ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordsVC.swift; sourceTree = "<group>"; };
 		ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XFWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +89,7 @@
 		B8709EB220D8FC2500CC4247 = {
 			isa = PBXGroup;
 			children = (
+				EC8C75B220E21E8A000BE8F9 /* Thrid */,
 				EC8C75AF20E1D1D1000BE8F9 /* AppleDemo */,
 				B8709EE720DB7BE300CC4247 /* Feather */,
 				ECE9728C20D9FD5000FB2ED9 /* Base */,
@@ -177,6 +180,13 @@
 			path = AppleDemo;
 			sourceTree = "<group>";
 		};
+		EC8C75B220E21E8A000BE8F9 /* Thrid */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Thrid;
+			sourceTree = "<group>";
+		};
 		ECE9728920D9E6D400FB2ED9 /* KeyWords */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +201,7 @@
 			children = (
 				ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */,
 				B8709EE520DA4CFE00CC4247 /* RuntimeHelper.swift */,
+				EC8C75B420E21F99000BE8F9 /* XFDemoTableViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -344,8 +355,10 @@
 				"${BUILT_PRODUCTS_DIR}/EFCMark/EFCMark.framework",
 				"${BUILT_PRODUCTS_DIR}/EFMarkdown/EFMarkdown.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -353,8 +366,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EFCMark.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EFMarkdown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -368,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8C75B520E21F99000BE8F9 /* XFDemoTableViewController.swift in Sources */,
 				ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */,
 				B8709EE220D8FECD00CC4247 /* MarkDownPreviewVC.swift in Sources */,
 				B8709EE920DB7C0C00CC4247 /* ClosuresVC.swift in Sources */,
