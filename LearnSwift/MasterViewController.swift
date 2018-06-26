@@ -19,7 +19,8 @@ class MasterViewController: UITableViewController {
 		
         objects = [["KeyWordsVC","swift关键字"],
 				   ["访问控制","http://www.runoob.com/swift/swift-access-control.html"],
-                   ["FeathersVC","swift语言特性"]];
+                   ["FeathersVC","swift语言特性"],
+				   ["AppleDemo","苹果官方Demo"]];
     }
 	
     // MARK: - Table View
@@ -63,6 +64,15 @@ class MasterViewController: UITableViewController {
 			webviewVC.loadURL("http://www.runoob.com/swift/swift-access-control.html")
 			
 			self.navigationController?.pushViewController(webviewVC, animated: true);
+		} else if (className.elementsEqual("AppleDemo")) {
+			
+			let nameSpace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
+			let cla : AnyClass = NSClassFromString(nameSpace+"."+className)!
+			let realClass = cla as! UIViewController.Type
+			
+			let vc = realClass.init();
+			
+			self.navigationController?.pushViewController(vc, animated: true)
 		}
     }
 }

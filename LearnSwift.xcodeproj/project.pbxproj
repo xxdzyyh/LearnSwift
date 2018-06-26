@@ -20,6 +20,7 @@
 		B8709EE620DA4CFE00CC4247 /* RuntimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8709EE520DA4CFE00CC4247 /* RuntimeHelper.swift */; };
 		B8709EE920DB7C0C00CC4247 /* ClosuresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8709EE820DB7C0C00CC4247 /* ClosuresVC.swift */; };
 		B8709EEB20DB7D5B00CC4247 /* FeathersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8709EEA20DB7D5B00CC4247 /* FeathersVC.swift */; };
+		EC8C75B120E1D1ED000BE8F9 /* AppleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C75B020E1D1ED000BE8F9 /* AppleDemo.swift */; };
 		ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */; };
 		ECE9728E20D9FD6700FB2ED9 /* XFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */; };
 		F58D8D95C7C0AE2BD140F9BE /* Pods_LearnSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */; };
@@ -58,6 +59,7 @@
 		B8709EE820DB7C0C00CC4247 /* ClosuresVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosuresVC.swift; sourceTree = "<group>"; };
 		B8709EEA20DB7D5B00CC4247 /* FeathersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeathersVC.swift; sourceTree = "<group>"; };
 		D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8C75B020E1D1ED000BE8F9 /* AppleDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleDemo.swift; sourceTree = "<group>"; };
 		ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordsVC.swift; sourceTree = "<group>"; };
 		ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XFWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 		B8709EB220D8FC2500CC4247 = {
 			isa = PBXGroup;
 			children = (
+				EC8C75AF20E1D1D1000BE8F9 /* AppleDemo */,
 				B8709EE720DB7BE300CC4247 /* Feather */,
 				ECE9728C20D9FD5000FB2ED9 /* Base */,
 				ECE9728920D9E6D400FB2ED9 /* KeyWords */,
@@ -164,6 +167,14 @@
 				1106E4932C7CAC9D4E947ABC /* Pods-LearnSwiftTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC8C75AF20E1D1D1000BE8F9 /* AppleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EC8C75B020E1D1ED000BE8F9 /* AppleDemo.swift */,
+			);
+			path = AppleDemo;
 			sourceTree = "<group>";
 		};
 		ECE9728920D9E6D400FB2ED9 /* KeyWords */ = {
@@ -367,6 +378,7 @@
 				ECE9728E20D9FD6700FB2ED9 /* XFWebViewController.swift in Sources */,
 				B8709EC120D8FC2500CC4247 /* MasterViewController.swift in Sources */,
 				B8709EBF20D8FC2500CC4247 /* AppDelegate.swift in Sources */,
+				EC8C75B120E1D1ED000BE8F9 /* AppleDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
