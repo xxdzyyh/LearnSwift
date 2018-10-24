@@ -16,7 +16,7 @@ class FeathersVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        dataSource = [["ClosuresVC","闭包"]];
+        dataSource = [["ClosuresVC","闭包"],["类属性多态","输出"]];
         
         setupTableView()
         self.view.addSubview(self.tableView!)
@@ -60,9 +60,19 @@ class FeathersVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         let className = item[0] as! String
         
-        let obj = RuntimeHelper.instanceForClassName(className)
-        
-        self.navigationController?.pushViewController(obj as! UIViewController, animated: true)
+        if className == "ClosuresVC" {
+            let obj = RuntimeHelper.instanceForClassName(className)
+            
+            self.navigationController?.pushViewController(obj as! UIViewController, animated: true)
+        } else if (className == "类属性多态") {
+            
+            XTokenRequest.domain = "XTokenRequest.domain"
+            XBaseRequest.domain = "XBaseRequest.domain"
+            
+            // 子类和父类的domain实际是同一个对象，虽有输出的值看赋值的顺序
+            XTokenRequest.init().url()
+        }
+    
     }
 
 }

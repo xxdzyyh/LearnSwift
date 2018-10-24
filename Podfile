@@ -9,7 +9,7 @@ target 'LearnSwift' do
   pod 'EFMarkdown'
   pod 'Moya'
   pod 'SnapKit'
-  pod 'XCGLogger'
+
   target 'LearnSwiftTests' do
     inherit! :search_paths
     # Pods for testing

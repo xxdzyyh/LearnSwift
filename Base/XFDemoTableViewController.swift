@@ -22,17 +22,16 @@ import UIKit
 	]
 */
 class XFDemoTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
 	var tableView : UITableView!
-	var dataSource: NSArray! {
-		set(data) {
-			
-		}
-		get {
-			return
-		}
-	}
-	
+	var dataSource: NSArray!
+    
+    func loadData(data : NSArray) -> Void {
+        dataSource = data
+        
+        self.tableView.reloadData()
+    }
+    
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		

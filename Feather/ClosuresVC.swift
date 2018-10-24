@@ -16,10 +16,16 @@ class ClosuresVC: MarkDownPreviewVC {
         originClosures()
         simplePetemeterName()
         
+        /*!
+         不使用尾随闭包特性
+         */
         testTrailingClosuresFunction(a: 4, { (i) in
             return (i + 1)
         })
         
+        /*!
+         使用尾随闭包特性
+         */
         testTrailingClosuresFunction(a: 4) { i in
             return (i - 1)
         }
@@ -46,6 +52,9 @@ class ClosuresVC: MarkDownPreviewVC {
     func simplePetemeterName() {
         let names = ["AT", "AE", "D", "S", "BE"]
         
+        /*!
+         如果上下文能够提供足够的信息，那么在声明闭包的时候，可以简化
+         */
         let result = names.sorted(by: {$0 < $1})
         
         print(result)
@@ -55,6 +64,9 @@ class ClosuresVC: MarkDownPreviewVC {
 //        }
     }
     
+    /*!
+     尾随闭包，如果闭包作为函数的最后一个参数，那在调用的时候，可以将闭包放在参数后面
+     */
     func testTrailingClosuresFunction(a:Int, _ closures: (Int) -> Int) {
         print(closures(a))
     }

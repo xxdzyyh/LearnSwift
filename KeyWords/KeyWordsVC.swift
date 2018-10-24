@@ -16,7 +16,8 @@ class KeyWordsVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		dataSource = [["InOutVC","inOut使参数的修改可以保留"]]
+		dataSource = [["InOutVC","inOut使参数的修改可以保留"],
+                      ["GuardVC","Guard"]]
 		
 		setupTableView()
 		

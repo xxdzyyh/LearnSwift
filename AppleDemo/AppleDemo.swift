@@ -62,7 +62,7 @@ class AppleDemo: UIViewController,UITableViewDelegate,UITableViewDataSource {
 		
 		let webViewVC = XFWebViewController()
 		
-		webViewVC.title = item[0] as! String
+        webViewVC.title = item[0] as? String
  		webViewVC.loadURL(className);
 		
 		self.navigationController?.pushViewController(webViewVC, animated: true)
