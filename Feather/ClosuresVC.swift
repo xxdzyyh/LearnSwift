@@ -30,13 +30,12 @@ class ClosuresVC: MarkDownPreviewVC {
             return (i - 1)
         }
         
-//        func normalFunc(a: Int) {
-//            print(a)
-//        }
-//        
-//        normalFunc(a: 4) { i in
-//            return (i-1)
-//        } // Extra argument 'a' in call
+        /*!
+         使用尾随闭包特性，如果没有其他参数，连 () 都可以省略
+         */
+        trailingClosure { i in 
+            return (i * 2)
+        }
     }
     
     func originClosures() {
@@ -58,7 +57,10 @@ class ClosuresVC: MarkDownPreviewVC {
         let result = names.sorted(by: {$0 < $1})
         
         print(result)
-        
+    
+        /*！
+         下面的写法就不行，上下文内容不够
+         */
 //        let closures = {
 //            $0 > $1
 //        }
@@ -69,5 +71,9 @@ class ClosuresVC: MarkDownPreviewVC {
      */
     func testTrailingClosuresFunction(a:Int, _ closures: (Int) -> Int) {
         print(closures(a))
+    }
+    
+    func trailingClosure(_ closures:(Int) -> Int) {
+        print(closures(5))
     }
 }

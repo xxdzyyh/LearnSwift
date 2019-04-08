@@ -7,7 +7,7 @@ target 'LearnSwift' do
 
   # Pods for LearnSwift
   pod 'EFMarkdown'
-  pod 'Moya'
+  pod 'Moya/RxSwift', '~> 12.0'
   pod 'SnapKit'
 
   target 'LearnSwiftTests' do

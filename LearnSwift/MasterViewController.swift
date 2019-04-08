@@ -16,11 +16,16 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-		
+		UIView.appearance().backgroundColor = .white
+        
         objects = [["KeyWordsVC","swift关键字"],
 				   ["访问控制","http://www.runoob.com/swift/swift-access-control.html"],
                    ["FeathersVC","swift语言特性"],
-				   ["AppleDemo","苹果官方Demo"]];
+				   ["AppleDemo","苹果官方Demo"],
+                   ["VarTypeVC","数据类型"],
+                   ["MoyaDemoVC","MoyaDemoVC"],
+                   ["SnapKitDemoVC","SnapKitDemo"]];
+        
     }
 	
     // MARK: - Table View

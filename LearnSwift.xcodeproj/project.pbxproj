@@ -20,9 +20,14 @@
 		B8709EE620DA4CFE00CC4247 /* RuntimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8709EE520DA4CFE00CC4247 /* RuntimeHelper.swift */; };
 		B8709EE920DB7C0C00CC4247 /* ClosuresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8709EE820DB7C0C00CC4247 /* ClosuresVC.swift */; };
 		B8709EEB20DB7D5B00CC4247 /* FeathersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8709EEA20DB7D5B00CC4247 /* FeathersVC.swift */; };
+		D40DE7B32252106C007ADE19 /* VarTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40DE7B22252106C007ADE19 /* VarTypeVC.swift */; };
 		D41951D8210F061C0006AF02 /* GuardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41951D7210F061C0006AF02 /* GuardVC.swift */; };
 		D44B2A252180568C009A84B6 /* XBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A242180568C009A84B6 /* XBaseRequest.swift */; };
 		D44B2A27218057DE009A84B6 /* XTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A26218057DE009A84B6 /* XTokenRequest.swift */; };
+		D4CEB6CB225ADEF9007E4B55 /* SnapKitDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6CA225ADEF9007E4B55 /* SnapKitDemoVC.swift */; };
+		D4CEB6CE225AE93F007E4B55 /* MoyaDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6CD225AE93F007E4B55 /* MoyaDemoVC.swift */; };
+		D4CEB6D1225B20DB007E4B55 /* RxSwiftDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6D0225B20DB007E4B55 /* RxSwiftDemoVC.swift */; };
+		D4CEB6D3225B399D007E4B55 /* PropertyDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6D2225B399D007E4B55 /* PropertyDemoVC.swift */; };
 		EC8C75B120E1D1ED000BE8F9 /* AppleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C75B020E1D1ED000BE8F9 /* AppleDemo.swift */; };
 		EC8C75B520E21F99000BE8F9 /* XFDemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C75B420E21F99000BE8F9 /* XFDemoTableViewController.swift */; };
 		ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */; };
@@ -62,9 +67,14 @@
 		B8709EE520DA4CFE00CC4247 /* RuntimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeHelper.swift; sourceTree = "<group>"; };
 		B8709EE820DB7C0C00CC4247 /* ClosuresVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosuresVC.swift; sourceTree = "<group>"; };
 		B8709EEA20DB7D5B00CC4247 /* FeathersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeathersVC.swift; sourceTree = "<group>"; };
+		D40DE7B22252106C007ADE19 /* VarTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarTypeVC.swift; sourceTree = "<group>"; };
 		D41951D7210F061C0006AF02 /* GuardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardVC.swift; sourceTree = "<group>"; };
 		D44B2A242180568C009A84B6 /* XBaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XBaseRequest.swift; sourceTree = "<group>"; };
 		D44B2A26218057DE009A84B6 /* XTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTokenRequest.swift; sourceTree = "<group>"; };
+		D4CEB6CA225ADEF9007E4B55 /* SnapKitDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitDemoVC.swift; sourceTree = "<group>"; };
+		D4CEB6CD225AE93F007E4B55 /* MoyaDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaDemoVC.swift; sourceTree = "<group>"; };
+		D4CEB6D0225B20DB007E4B55 /* RxSwiftDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftDemoVC.swift; sourceTree = "<group>"; };
+		D4CEB6D2225B399D007E4B55 /* PropertyDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDemoVC.swift; sourceTree = "<group>"; };
 		D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8C75B020E1D1ED000BE8F9 /* AppleDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleDemo.swift; sourceTree = "<group>"; };
 		EC8C75B420E21F99000BE8F9 /* XFDemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XFDemoTableViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +105,8 @@
 		B8709EB220D8FC2500CC4247 = {
 			isa = PBXGroup;
 			children = (
+				D4CEB6C8225ADECB007E4B55 /* Verdor */,
+				D40DE7B12252104D007ADE19 /* VarType */,
 				EC8C75AF20E1D1D1000BE8F9 /* AppleDemo */,
 				B8709EE720DB7BE300CC4247 /* Feather */,
 				ECE9728C20D9FD5000FB2ED9 /* Base */,
@@ -155,6 +167,7 @@
 				B8709EEA20DB7D5B00CC4247 /* FeathersVC.swift */,
 				D44B2A242180568C009A84B6 /* XBaseRequest.swift */,
 				D44B2A26218057DE009A84B6 /* XTokenRequest.swift */,
+				D4CEB6D2225B399D007E4B55 /* PropertyDemoVC.swift */,
 			);
 			path = Feather;
 			sourceTree = "<group>";
@@ -166,6 +179,48 @@
 				D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D40DE7B12252104D007ADE19 /* VarType */ = {
+			isa = PBXGroup;
+			children = (
+				D40DE7B22252106C007ADE19 /* VarTypeVC.swift */,
+			);
+			path = VarType;
+			sourceTree = "<group>";
+		};
+		D4CEB6C8225ADECB007E4B55 /* Verdor */ = {
+			isa = PBXGroup;
+			children = (
+				D4CEB6CF225B20BE007E4B55 /* RxSwift */,
+				D4CEB6CC225AE92B007E4B55 /* Moya */,
+				D4CEB6C9225ADED4007E4B55 /* SnapKit */,
+			);
+			path = Verdor;
+			sourceTree = "<group>";
+		};
+		D4CEB6C9225ADED4007E4B55 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				D4CEB6CA225ADEF9007E4B55 /* SnapKitDemoVC.swift */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		D4CEB6CC225AE92B007E4B55 /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				D4CEB6CD225AE93F007E4B55 /* MoyaDemoVC.swift */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
+		D4CEB6CF225B20BE007E4B55 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				D4CEB6D0225B20DB007E4B55 /* RxSwiftDemoVC.swift */,
+			);
+			path = RxSwift;
 			sourceTree = "<group>";
 		};
 		E50DA3CFEA0202FE51F18747 /* Pods */ = {
@@ -201,8 +256,8 @@
 			isa = PBXGroup;
 			children = (
 				ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */,
-				B8709EE520DA4CFE00CC4247 /* RuntimeHelper.swift */,
 				EC8C75B420E21F99000BE8F9 /* XFDemoTableViewController.swift */,
+				B8709EE520DA4CFE00CC4247 /* RuntimeHelper.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -357,6 +412,7 @@
 				"${BUILT_PRODUCTS_DIR}/EFMarkdown/EFMarkdown.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -366,6 +422,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EFMarkdown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,18 +437,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CEB6D1225B20DB007E4B55 /* RxSwiftDemoVC.swift in Sources */,
 				EC8C75B520E21F99000BE8F9 /* XFDemoTableViewController.swift in Sources */,
 				D41951D8210F061C0006AF02 /* GuardVC.swift in Sources */,
 				ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */,
+				D40DE7B32252106C007ADE19 /* VarTypeVC.swift in Sources */,
 				B8709EE220D8FECD00CC4247 /* MarkDownPreviewVC.swift in Sources */,
+				D4CEB6CE225AE93F007E4B55 /* MoyaDemoVC.swift in Sources */,
 				B8709EE920DB7C0C00CC4247 /* ClosuresVC.swift in Sources */,
 				B8709EEB20DB7D5B00CC4247 /* FeathersVC.swift in Sources */,
 				B8709EE620DA4CFE00CC4247 /* RuntimeHelper.swift in Sources */,
+				D4CEB6D3225B399D007E4B55 /* PropertyDemoVC.swift in Sources */,
 				B8709EC320D8FC2500CC4247 /* DetailViewController.swift in Sources */,
 				B8709EE420DA4C6900CC4247 /* InOutVC.swift in Sources */,
 				ECE9728E20D9FD6700FB2ED9 /* XFWebViewController.swift in Sources */,
 				D44B2A27218057DE009A84B6 /* XTokenRequest.swift in Sources */,
 				B8709EC120D8FC2500CC4247 /* MasterViewController.swift in Sources */,
+				D4CEB6CB225ADEF9007E4B55 /* SnapKitDemoVC.swift in Sources */,
 				B8709EBF20D8FC2500CC4247 /* AppDelegate.swift in Sources */,
 				EC8C75B120E1D1ED000BE8F9 /* AppleDemo.swift in Sources */,
 				D44B2A252180568C009A84B6 /* XBaseRequest.swift in Sources */,
@@ -551,6 +613,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BN7E4W99SM;
 				INFOPLIST_FILE = LearnSwift/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.feng.LearnSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -567,6 +630,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BN7E4W99SM;
 				INFOPLIST_FILE = LearnSwift/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.feng.LearnSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";

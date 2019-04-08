@@ -26,7 +26,7 @@ class KeyWordsVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
 		self.tableView!.frame = self.view.bounds
 	}
 	
-	///Mark
+	/// Mark
 	func setupTableView() {
 		tableView = UITableView.init(frame: CGRect.zero, style: .plain)
 		tableView!.delegate = self
@@ -34,7 +34,7 @@ class KeyWordsVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
 		tableView!.rowHeight = 60
 	}
 	
-	///MARK
+	/// MARK
 	func numberOfSections(in tableView: UITableView) -> Int {
 		return 1
 	}

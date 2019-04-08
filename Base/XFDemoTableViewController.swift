@@ -15,12 +15,25 @@ import UIKit
 
 	[
 		[
-			"className" : "this is className",
-		 	"desc" : "this is type",
-		 	"type" : "this is type"
+			"key" : "ViewController",
+		 	"value" : "XXVC",
+		 	"desc" : "this is type"
 		]
 	]
 */
+
+enum ActionKey : String {
+    case key = "key"
+    case value = "value"
+    case desc = "desc"
+}
+
+enum ActionType {
+    case ViewController
+    case Method
+    case Others
+}
+
 class XFDemoTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
 	var tableView : UITableView!
@@ -66,34 +79,41 @@ class XFDemoTableViewController: UIViewController, UITableViewDataSource, UITabl
 			cell = UITableViewCell.init(style:UITableViewCellStyle.subtitle, reuseIdentifier: "Cell")
 		}
 		
-		let item = self.dataSource[indexPath.row] as! NSArray;
+        let item = self.dataSource[indexPath.row] as! NSDictionary;
+        
+        let className = item[ActionKey.value] as! String
+        let type : ActionType = item[ActionKey.key] as! ActionType
 		
-		cell?.textLabel?.text = item[0] as? String
-		cell?.detailTextLabel?.text = item[1] as? String
-		
+		cell?.textLabel?.text = className
+        cell?.detailTextLabel?.text = {
+            switch type {
+            case ActionType.ViewController:
+                return "UIViewController"
+            case ActionType.Method:
+                return "Method"
+            case ActionType.Others:
+                return "Others"
+            }
+        }()
+        
 		return cell!
 	}
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		let item = self.dataSource[indexPath.row] as! NSDictionary;
 		
-		let className = item["className"] as! String
-		let type = item["type"] as! String
+		let value = item[ActionKey.value] as! String
+		let type = item[ActionKey.key] as! ActionType
 		
 		switch type {
-		case "ViewController":
-			
-			let obj = RuntimeHelper.instanceForClassName(className)
-			
+		case .ViewController:
+			let obj = RuntimeHelper.instanceForClassName(value)
 			self.navigationController?.pushViewController(obj as! UIViewController, animated: true)
-			
+        case .Method:
+            let select = Selector.init(value);
+            self.perform(select);
 		default:
 			print("cannot deal with type #{}")
 		}
-
-		
 	}
-	
-	
-	
 }

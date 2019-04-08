@@ -24,7 +24,7 @@ class GuardVC: MarkDownPreviewVC {
         }
         
         guard var newname = name else {
-            print("guard newname")
+            print("newname nil")
             return
         }
         
@@ -35,10 +35,13 @@ class GuardVC: MarkDownPreviewVC {
         /**
          * guard/if let 将optional类型自动解包，后续可以使用新的零时变量而无需解包，同时暗含比较的含义
          */
-        guard let aname : String = newname else {
-            print("guard newname")
+        guard let aname = name else {
+            print("guard name nil")
             return
         }
+        
+        // aname一定有值 
+        print(aname)
         
         /**
          * guard true else中的语句将不再执行
