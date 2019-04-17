@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.8.2)
+  - Cartography (3.1.0)
   - EFCMark (0.0.2)
   - EFMarkdown (5.0.0):
     - EFCMark (= 0.0.2)
@@ -14,6 +15,7 @@ PODS:
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
+  - Cartography (~> 3.0)
   - EFMarkdown
   - Moya/RxSwift (~> 12.0)
   - SnapKit
@@ -21,6 +23,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Cartography
     - EFCMark
     - EFMarkdown
     - Moya
@@ -30,6 +33,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Cartography: 1988b7578871a56c036e7af17195cb2190edf18c
   EFCMark: 78fb32ed4107c8efc640ad9d20ac31cd44ce2046
   EFMarkdown: 915ff03080b95efcc737650991397322d661f1d9
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
@@ -37,6 +41,6 @@ SPEC CHECKSUMS:
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: be46e791418daefe6e26bb9046099c498fa5a821
+PODFILE CHECKSUM: 0aeaf420e388bd748fb76661223413a7074d6a91
 
 COCOAPODS: 1.5.3

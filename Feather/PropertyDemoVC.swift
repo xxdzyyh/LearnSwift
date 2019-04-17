@@ -10,6 +10,7 @@ import UIKit
 
 class PropertyDemoVC : UIViewController {
     
+    // 完整的形式
     var name : String = { (arg1 : String) in
         return arg1
     } ("日月当空")

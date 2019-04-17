@@ -42,7 +42,12 @@ extension Api : TargetType {
     }
     
     var task: Moya.Task {
-        return .requestPlain
+        switch self {
+        case .zen:
+            return .requestPlain
+        default:
+            return .requestPlain
+        }
     }
 }
 
@@ -54,6 +59,9 @@ class MoyaDemoVC : XFDemoTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /**
+         订阅全部事件
+         */
         Api.rx.request(.zen, callbackQueue: DispatchQueue.main)
             .asObservable()
             .mapString()

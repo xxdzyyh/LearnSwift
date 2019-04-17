@@ -24,7 +24,9 @@ class MasterViewController: UITableViewController {
 				   ["AppleDemo","苹果官方Demo"],
                    ["VarTypeVC","数据类型"],
                    ["MoyaDemoVC","MoyaDemoVC"],
-                   ["SnapKitDemoVC","SnapKitDemo"]];
+                   ["SnapKitDemoVC","SnapKitDemo"],
+                   ["CartographyVC","CartographyDemo"],
+        ];
         
     }
 	
