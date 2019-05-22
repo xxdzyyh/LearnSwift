@@ -30,6 +30,8 @@
 		D4CEB6D3225B399D007E4B55 /* PropertyDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6D2225B399D007E4B55 /* PropertyDemoVC.swift */; };
 		D4CEB6D5225B4648007E4B55 /* ExtensionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6D4225B4648007E4B55 /* ExtensionVC.swift */; };
 		D4CEB72922671130007E4B55 /* CartographyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB72822671130007E4B55 /* CartographyVC.swift */; };
+		D4E8748A2294DEC0002C8061 /* JSONVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E874892294DEC0002C8061 /* JSONVC.swift */; };
+		D4E8748C2294DFA0002C8061 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = D4E8748B2294DFA0002C8061 /* user.json */; };
 		EC8C75B120E1D1ED000BE8F9 /* AppleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C75B020E1D1ED000BE8F9 /* AppleDemo.swift */; };
 		EC8C75B520E21F99000BE8F9 /* XFDemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C75B420E21F99000BE8F9 /* XFDemoTableViewController.swift */; };
 		ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */; };
@@ -79,6 +81,8 @@
 		D4CEB6D2225B399D007E4B55 /* PropertyDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDemoVC.swift; sourceTree = "<group>"; };
 		D4CEB6D4225B4648007E4B55 /* ExtensionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionVC.swift; sourceTree = "<group>"; };
 		D4CEB72822671130007E4B55 /* CartographyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartographyVC.swift; sourceTree = "<group>"; };
+		D4E874892294DEC0002C8061 /* JSONVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONVC.swift; sourceTree = "<group>"; };
+		D4E8748B2294DFA0002C8061 /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8C75B020E1D1ED000BE8F9 /* AppleDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleDemo.swift; sourceTree = "<group>"; };
 		EC8C75B420E21F99000BE8F9 /* XFDemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XFDemoTableViewController.swift; sourceTree = "<group>"; };
@@ -245,6 +249,15 @@
 			path = Cartography;
 			sourceTree = "<group>";
 		};
+		D4E874882294DEA6002C8061 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				D4E874892294DEC0002C8061 /* JSONVC.swift */,
+				D4E8748B2294DFA0002C8061 /* user.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		E50DA3CFEA0202FE51F18747 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +280,7 @@
 		ECE9728920D9E6D400FB2ED9 /* KeyWords */ = {
 			isa = PBXGroup;
 			children = (
+				D4E874882294DEA6002C8061 /* JSON */,
 				ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */,
 				B8709EE320DA4C6900CC4247 /* InOutVC.swift */,
 				D41951D7210F061C0006AF02 /* GuardVC.swift */,
@@ -370,6 +384,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4E8748C2294DFA0002C8061 /* user.json in Resources */,
 				B8709ECB20D8FC2500CC4247 /* LaunchScreen.storyboard in Resources */,
 				B8709EC820D8FC2500CC4247 /* Assets.xcassets in Resources */,
 				B8709EC620D8FC2500CC4247 /* Main.storyboard in Resources */,
@@ -472,6 +487,7 @@
 				D4CEB6D5225B4648007E4B55 /* ExtensionVC.swift in Sources */,
 				B8709EE920DB7C0C00CC4247 /* ClosuresVC.swift in Sources */,
 				B8709EEB20DB7D5B00CC4247 /* FeathersVC.swift in Sources */,
+				D4E8748A2294DEC0002C8061 /* JSONVC.swift in Sources */,
 				B8709EE620DA4CFE00CC4247 /* RuntimeHelper.swift in Sources */,
 				D4CEB6D3225B399D007E4B55 /* PropertyDemoVC.swift in Sources */,
 				B8709EC320D8FC2500CC4247 /* DetailViewController.swift in Sources */,

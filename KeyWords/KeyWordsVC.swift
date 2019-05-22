@@ -17,7 +17,8 @@ class KeyWordsVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
 		super.viewDidLoad()
 		
 		dataSource = [["InOutVC","inOut使参数的修改可以保留"],
-                      ["GuardVC","Guard"]]
+                      ["GuardVC","Guard"],
+                      ["JSONVC","Coable json 转 model"]]
 		
 		setupTableView()
 		
