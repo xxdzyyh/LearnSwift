@@ -8,8 +8,10 @@ target 'LearnSwift' do
   # Pods for LearnSwift
   pod 'EFMarkdown'
   pod 'Moya/RxSwift', '~> 12.0'
+  pod 'RxCocoa'
   pod 'SnapKit'
   pod 'Cartography', '~> 3.0'
+  pod 'HandyJSON'
   
   target 'LearnSwiftTests' do
     inherit! :search_paths

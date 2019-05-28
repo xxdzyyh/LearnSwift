@@ -24,13 +24,14 @@
 		D41951D8210F061C0006AF02 /* GuardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41951D7210F061C0006AF02 /* GuardVC.swift */; };
 		D44B2A252180568C009A84B6 /* XBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A242180568C009A84B6 /* XBaseRequest.swift */; };
 		D44B2A27218057DE009A84B6 /* XTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A26218057DE009A84B6 /* XTokenRequest.swift */; };
+		D4672E6E22977B6400A5DE44 /* HandyJSONVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4672E6D22977B6400A5DE44 /* HandyJSONVC.swift */; };
 		D4CEB6CB225ADEF9007E4B55 /* SnapKitDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6CA225ADEF9007E4B55 /* SnapKitDemoVC.swift */; };
 		D4CEB6CE225AE93F007E4B55 /* MoyaDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6CD225AE93F007E4B55 /* MoyaDemoVC.swift */; };
 		D4CEB6D1225B20DB007E4B55 /* RxSwiftDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6D0225B20DB007E4B55 /* RxSwiftDemoVC.swift */; };
 		D4CEB6D3225B399D007E4B55 /* PropertyDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6D2225B399D007E4B55 /* PropertyDemoVC.swift */; };
 		D4CEB6D5225B4648007E4B55 /* ExtensionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6D4225B4648007E4B55 /* ExtensionVC.swift */; };
 		D4CEB72922671130007E4B55 /* CartographyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB72822671130007E4B55 /* CartographyVC.swift */; };
-		D4E8748A2294DEC0002C8061 /* JSONVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E874892294DEC0002C8061 /* JSONVC.swift */; };
+		D4E8748A2294DEC0002C8061 /* JSONCodableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E874892294DEC0002C8061 /* JSONCodableVC.swift */; };
 		D4E8748C2294DFA0002C8061 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = D4E8748B2294DFA0002C8061 /* user.json */; };
 		EC8C75B120E1D1ED000BE8F9 /* AppleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C75B020E1D1ED000BE8F9 /* AppleDemo.swift */; };
 		EC8C75B520E21F99000BE8F9 /* XFDemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C75B420E21F99000BE8F9 /* XFDemoTableViewController.swift */; };
@@ -75,13 +76,15 @@
 		D41951D7210F061C0006AF02 /* GuardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardVC.swift; sourceTree = "<group>"; };
 		D44B2A242180568C009A84B6 /* XBaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XBaseRequest.swift; sourceTree = "<group>"; };
 		D44B2A26218057DE009A84B6 /* XTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTokenRequest.swift; sourceTree = "<group>"; };
+		D4672E6D22977B6400A5DE44 /* HandyJSONVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandyJSONVC.swift; sourceTree = "<group>"; };
+		D4672E73229CD41400A5DE44 /* RxSwiftPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D4CEB6CA225ADEF9007E4B55 /* SnapKitDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitDemoVC.swift; sourceTree = "<group>"; };
 		D4CEB6CD225AE93F007E4B55 /* MoyaDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaDemoVC.swift; sourceTree = "<group>"; };
 		D4CEB6D0225B20DB007E4B55 /* RxSwiftDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftDemoVC.swift; sourceTree = "<group>"; };
 		D4CEB6D2225B399D007E4B55 /* PropertyDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDemoVC.swift; sourceTree = "<group>"; };
 		D4CEB6D4225B4648007E4B55 /* ExtensionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionVC.swift; sourceTree = "<group>"; };
 		D4CEB72822671130007E4B55 /* CartographyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartographyVC.swift; sourceTree = "<group>"; };
-		D4E874892294DEC0002C8061 /* JSONVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONVC.swift; sourceTree = "<group>"; };
+		D4E874892294DEC0002C8061 /* JSONCodableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCodableVC.swift; sourceTree = "<group>"; };
 		D4E8748B2294DFA0002C8061 /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8C75B020E1D1ED000BE8F9 /* AppleDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleDemo.swift; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 		B8709EB220D8FC2500CC4247 = {
 			isa = PBXGroup;
 			children = (
+				D4672E72229CD15700A5DE44 /* RxSwift */,
 				D4CEB6C8225ADECB007E4B55 /* Verdor */,
 				D40DE7B12252104D007ADE19 /* VarType */,
 				EC8C75AF20E1D1D1000BE8F9 /* AppleDemo */,
@@ -171,6 +175,7 @@
 		B8709EE720DB7BE300CC4247 /* Feather */ = {
 			isa = PBXGroup;
 			children = (
+				D4672E6F2297D4FC00A5DE44 /* Memory */,
 				B8709EE820DB7C0C00CC4247 /* ClosuresVC.swift */,
 				B8709EEA20DB7D5B00CC4247 /* FeathersVC.swift */,
 				D44B2A242180568C009A84B6 /* XBaseRequest.swift */,
@@ -196,6 +201,21 @@
 				D40DE7B22252106C007ADE19 /* VarTypeVC.swift */,
 			);
 			path = VarType;
+			sourceTree = "<group>";
+		};
+		D4672E6F2297D4FC00A5DE44 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		D4672E72229CD15700A5DE44 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				D4672E73229CD41400A5DE44 /* RxSwiftPlayground.playground */,
+			);
+			path = RxSwift;
 			sourceTree = "<group>";
 		};
 		D4CEB6C8225ADECB007E4B55 /* Verdor */ = {
@@ -252,8 +272,9 @@
 		D4E874882294DEA6002C8061 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				D4E874892294DEC0002C8061 /* JSONVC.swift */,
+				D4E874892294DEC0002C8061 /* JSONCodableVC.swift */,
 				D4E8748B2294DFA0002C8061 /* user.json */,
+				D4672E6D22977B6400A5DE44 /* HandyJSONVC.swift */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -310,6 +331,7 @@
 				B8709EB820D8FC2500CC4247 /* Frameworks */,
 				B8709EB920D8FC2500CC4247 /* Resources */,
 				D39B403C858A69295B11A2EB /* [CP] Embed Pods Frameworks */,
+				D4672E712297F36F00A5DE44 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -448,8 +470,10 @@
 				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
 				"${BUILT_PRODUCTS_DIR}/EFCMark/EFCMark.framework",
 				"${BUILT_PRODUCTS_DIR}/EFMarkdown/EFMarkdown.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
@@ -459,8 +483,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EFCMark.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EFMarkdown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
@@ -468,6 +494,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnSwift/Pods-LearnSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D4672E712297F36F00A5DE44 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nenv\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -487,7 +526,8 @@
 				D4CEB6D5225B4648007E4B55 /* ExtensionVC.swift in Sources */,
 				B8709EE920DB7C0C00CC4247 /* ClosuresVC.swift in Sources */,
 				B8709EEB20DB7D5B00CC4247 /* FeathersVC.swift in Sources */,
-				D4E8748A2294DEC0002C8061 /* JSONVC.swift in Sources */,
+				D4672E6E22977B6400A5DE44 /* HandyJSONVC.swift in Sources */,
+				D4E8748A2294DEC0002C8061 /* JSONCodableVC.swift in Sources */,
 				B8709EE620DA4CFE00CC4247 /* RuntimeHelper.swift in Sources */,
 				D4CEB6D3225B399D007E4B55 /* PropertyDemoVC.swift in Sources */,
 				B8709EC320D8FC2500CC4247 /* DetailViewController.swift in Sources */,

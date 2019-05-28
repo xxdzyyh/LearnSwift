@@ -4,6 +4,7 @@ PODS:
   - EFCMark (0.0.2)
   - EFMarkdown (5.0.0):
     - EFCMark (= 0.0.2)
+  - HandyJSON (5.0.0)
   - Moya/Core (12.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.0)
@@ -11,13 +12,17 @@ PODS:
     - Moya/Core
     - RxSwift (~> 4.0)
   - Result (4.1.0)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
   - RxSwift (4.5.0)
-  - SnapKit (4.2.0)
+  - SnapKit (5.0.0)
 
 DEPENDENCIES:
   - Cartography (~> 3.0)
   - EFMarkdown
+  - HandyJSON
   - Moya/RxSwift (~> 12.0)
+  - RxCocoa
   - SnapKit
 
 SPEC REPOS:
@@ -26,8 +31,10 @@ SPEC REPOS:
     - Cartography
     - EFCMark
     - EFMarkdown
+    - HandyJSON
     - Moya
     - Result
+    - RxCocoa
     - RxSwift
     - SnapKit
 
@@ -36,11 +43,13 @@ SPEC CHECKSUMS:
   Cartography: 1988b7578871a56c036e7af17195cb2190edf18c
   EFCMark: 78fb32ed4107c8efc640ad9d20ac31cd44ce2046
   EFMarkdown: 915ff03080b95efcc737650991397322d661f1d9
+  HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
 
-PODFILE CHECKSUM: 0aeaf420e388bd748fb76661223413a7074d6a91
+PODFILE CHECKSUM: 5fbb9f6f93c597243a85f3166fc0867798ff34eb
 
 COCOAPODS: 1.5.3
