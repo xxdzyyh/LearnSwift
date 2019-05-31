@@ -25,6 +25,7 @@
 		D44B2A252180568C009A84B6 /* XBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A242180568C009A84B6 /* XBaseRequest.swift */; };
 		D44B2A27218057DE009A84B6 /* XTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A26218057DE009A84B6 /* XTokenRequest.swift */; };
 		D4672E6E22977B6400A5DE44 /* HandyJSONVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4672E6D22977B6400A5DE44 /* HandyJSONVC.swift */; };
+		D4672E7A229F7A9200A5DE44 /* MemoryManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4672E79229F7A9200A5DE44 /* MemoryManagerVC.swift */; };
 		D4CEB6CB225ADEF9007E4B55 /* SnapKitDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6CA225ADEF9007E4B55 /* SnapKitDemoVC.swift */; };
 		D4CEB6CE225AE93F007E4B55 /* MoyaDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6CD225AE93F007E4B55 /* MoyaDemoVC.swift */; };
 		D4CEB6D1225B20DB007E4B55 /* RxSwiftDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6D0225B20DB007E4B55 /* RxSwiftDemoVC.swift */; };
@@ -78,6 +79,9 @@
 		D44B2A26218057DE009A84B6 /* XTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTokenRequest.swift; sourceTree = "<group>"; };
 		D4672E6D22977B6400A5DE44 /* HandyJSONVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandyJSONVC.swift; sourceTree = "<group>"; };
 		D4672E73229CD41400A5DE44 /* RxSwiftPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D4672E79229F7A9200A5DE44 /* MemoryManagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryManagerVC.swift; sourceTree = "<group>"; };
+		D4672E7B229F831900A5DE44 /* MemoryManager.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MemoryManager.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D4672E7C229FD72200A5DE44 /* Pointer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Pointer.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D4CEB6CA225ADEF9007E4B55 /* SnapKitDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitDemoVC.swift; sourceTree = "<group>"; };
 		D4CEB6CD225AE93F007E4B55 /* MoyaDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaDemoVC.swift; sourceTree = "<group>"; };
 		D4CEB6D0225B20DB007E4B55 /* RxSwiftDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftDemoVC.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 		B8709EB220D8FC2500CC4247 = {
 			isa = PBXGroup;
 			children = (
+				D4672E78229F7A6A00A5DE44 /* MemoryManager */,
 				D4672E72229CD15700A5DE44 /* RxSwift */,
 				D4CEB6C8225ADECB007E4B55 /* Verdor */,
 				D40DE7B12252104D007ADE19 /* VarType */,
@@ -216,6 +221,16 @@
 				D4672E73229CD41400A5DE44 /* RxSwiftPlayground.playground */,
 			);
 			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		D4672E78229F7A6A00A5DE44 /* MemoryManager */ = {
+			isa = PBXGroup;
+			children = (
+				D4672E79229F7A9200A5DE44 /* MemoryManagerVC.swift */,
+				D4672E7B229F831900A5DE44 /* MemoryManager.playground */,
+				D4672E7C229FD72200A5DE44 /* Pointer.playground */,
+			);
+			path = MemoryManager;
 			sourceTree = "<group>";
 		};
 		D4CEB6C8225ADECB007E4B55 /* Verdor */ = {
@@ -534,6 +549,7 @@
 				B8709EE420DA4C6900CC4247 /* InOutVC.swift in Sources */,
 				ECE9728E20D9FD6700FB2ED9 /* XFWebViewController.swift in Sources */,
 				D44B2A27218057DE009A84B6 /* XTokenRequest.swift in Sources */,
+				D4672E7A229F7A9200A5DE44 /* MemoryManagerVC.swift in Sources */,
 				B8709EC120D8FC2500CC4247 /* MasterViewController.swift in Sources */,
 				D4CEB6CB225ADEF9007E4B55 /* SnapKitDemoVC.swift in Sources */,
 				B8709EBF20D8FC2500CC4247 /* AppDelegate.swift in Sources */,

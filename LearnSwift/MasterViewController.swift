@@ -18,7 +18,8 @@ class MasterViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
 		UIView.appearance().backgroundColor = .white
         
-        objects = [["KeyWordsVC","swift关键字"],
+        objects = [["MemoryManagerVC","内存管理"],
+                   ["KeyWordsVC","swift关键字"],
 				   ["访问控制","http://www.runoob.com/swift/swift-access-control.html"],
                    ["FeathersVC","swift语言特性"],
 				   ["AppleDemo","苹果官方Demo"],
