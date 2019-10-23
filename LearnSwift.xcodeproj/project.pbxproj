@@ -82,6 +82,9 @@
 		D4672E79229F7A9200A5DE44 /* MemoryManagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryManagerVC.swift; sourceTree = "<group>"; };
 		D4672E7B229F831900A5DE44 /* MemoryManager.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MemoryManager.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D4672E7C229FD72200A5DE44 /* Pointer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Pointer.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D4672E7E22A4EB8400A5DE44 /* Generic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Generic.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D4672E8022A523E800A5DE44 /* FP.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FP.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D4672E8222A606EE00A5DE44 /* DesignPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DesignPattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D4CEB6CA225ADEF9007E4B55 /* SnapKitDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitDemoVC.swift; sourceTree = "<group>"; };
 		D4CEB6CD225AE93F007E4B55 /* MoyaDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaDemoVC.swift; sourceTree = "<group>"; };
 		D4CEB6D0225B20DB007E4B55 /* RxSwiftDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftDemoVC.swift; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 		B8709EB220D8FC2500CC4247 = {
 			isa = PBXGroup;
 			children = (
+				D4672E8122A606B400A5DE44 /* DesignPattern */,
+				D4672E7D22A4EB5300A5DE44 /* Generic */,
 				D4672E78229F7A6A00A5DE44 /* MemoryManager */,
 				D4672E72229CD15700A5DE44 /* RxSwift */,
 				D4CEB6C8225ADECB007E4B55 /* Verdor */,
@@ -231,6 +236,31 @@
 				D4672E7C229FD72200A5DE44 /* Pointer.playground */,
 			);
 			path = MemoryManager;
+			sourceTree = "<group>";
+		};
+		D4672E7D22A4EB5300A5DE44 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				D4672E7F22A5239A00A5DE44 /* FP */,
+				D4672E7E22A4EB8400A5DE44 /* Generic.playground */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		D4672E7F22A5239A00A5DE44 /* FP */ = {
+			isa = PBXGroup;
+			children = (
+				D4672E8022A523E800A5DE44 /* FP.playground */,
+			);
+			path = FP;
+			sourceTree = "<group>";
+		};
+		D4672E8122A606B400A5DE44 /* DesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				D4672E8222A606EE00A5DE44 /* DesignPattern.playground */,
+			);
+			path = DesignPattern;
 			sourceTree = "<group>";
 		};
 		D4CEB6C8225ADECB007E4B55 /* Verdor */ = {
