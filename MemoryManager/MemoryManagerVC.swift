@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyObject {
+class MyClass {
     
     var name = ""
     
@@ -35,7 +35,7 @@ class MemoryManagerVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let obj = MyObject()
+        let obj = MyClass()
         
         obj.name = "www"
         

@@ -38,6 +38,8 @@
 		EC8C75B520E21F99000BE8F9 /* XFDemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C75B420E21F99000BE8F9 /* XFDemoTableViewController.swift */; };
 		EC9CAE612489CB68001328FD /* AudioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CAE602489CB68001328FD /* AudioVC.swift */; };
 		EC9CAE632489D2A3001328FD /* AudioRecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CAE622489D2A3001328FD /* AudioRecordVC.swift */; };
+		EC9CAE66248A711D001328FD /* MyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CAE65248A711D001328FD /* MyObject.swift */; };
+		EC9CAE68248A718A001328FD /* LazyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CAE67248A718A001328FD /* LazyVC.swift */; };
 		ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */; };
 		ECE9728E20D9FD6700FB2ED9 /* XFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */; };
 		F58D8D95C7C0AE2BD140F9BE /* Pods_LearnSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */; };
@@ -100,6 +102,8 @@
 		EC8C75B420E21F99000BE8F9 /* XFDemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XFDemoTableViewController.swift; sourceTree = "<group>"; };
 		EC9CAE602489CB68001328FD /* AudioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVC.swift; sourceTree = "<group>"; };
 		EC9CAE622489D2A3001328FD /* AudioRecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordVC.swift; sourceTree = "<group>"; };
+		EC9CAE65248A711D001328FD /* MyObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyObject.swift; sourceTree = "<group>"; };
+		EC9CAE67248A718A001328FD /* LazyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVC.swift; sourceTree = "<group>"; };
 		ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordsVC.swift; sourceTree = "<group>"; };
 		ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XFWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +131,7 @@
 		B8709EB220D8FC2500CC4247 = {
 			isa = PBXGroup;
 			children = (
+				EC9CAE69248DDD93001328FD /* XMPP */,
 				EC9CAE5E2489CAF8001328FD /* Audio */,
 				D4672E8122A606B400A5DE44 /* DesignPattern */,
 				D4672E7D22A4EB5300A5DE44 /* Generic */,
@@ -366,9 +371,26 @@
 			path = Record;
 			sourceTree = "<group>";
 		};
+		EC9CAE64248A70F6001328FD /* Lazy */ = {
+			isa = PBXGroup;
+			children = (
+				EC9CAE65248A711D001328FD /* MyObject.swift */,
+			);
+			path = Lazy;
+			sourceTree = "<group>";
+		};
+		EC9CAE69248DDD93001328FD /* XMPP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XMPP;
+			sourceTree = "<group>";
+		};
 		ECE9728920D9E6D400FB2ED9 /* KeyWords */ = {
 			isa = PBXGroup;
 			children = (
+				EC9CAE67248A718A001328FD /* LazyVC.swift */,
+				EC9CAE64248A70F6001328FD /* Lazy */,
 				ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */,
 				B8709EE320DA4C6900CC4247 /* InOutVC.swift */,
 				D41951D7210F061C0006AF02 /* GuardVC.swift */,
@@ -588,6 +610,7 @@
 				EC9CAE632489D2A3001328FD /* AudioRecordVC.swift in Sources */,
 				EC9CAE612489CB68001328FD /* AudioVC.swift in Sources */,
 				ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */,
+				EC9CAE68248A718A001328FD /* LazyVC.swift in Sources */,
 				D40DE7B32252106C007ADE19 /* VarTypeVC.swift in Sources */,
 				B8709EE220D8FECD00CC4247 /* MarkDownPreviewVC.swift in Sources */,
 				D4CEB6CE225AE93F007E4B55 /* MoyaDemoVC.swift in Sources */,
@@ -608,6 +631,7 @@
 				D4CEB6CB225ADEF9007E4B55 /* SnapKitDemoVC.swift in Sources */,
 				B8709EBF20D8FC2500CC4247 /* AppDelegate.swift in Sources */,
 				EC8C75B120E1D1ED000BE8F9 /* AppleDemo.swift in Sources */,
+				EC9CAE66248A711D001328FD /* MyObject.swift in Sources */,
 				D44B2A252180568C009A84B6 /* XBaseRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -763,7 +787,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BN7E4W99SM;
 				INFOPLIST_FILE = LearnSwift/Info.plist;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -780,7 +804,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BN7E4W99SM;
 				INFOPLIST_FILE = LearnSwift/Info.plist;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

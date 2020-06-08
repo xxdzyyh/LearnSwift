@@ -1,10 +1,25 @@
 PODS:
   - Alamofire (4.8.2)
   - Cartography (3.1.0)
+  - CocoaAsyncSocket (7.6.4)
+  - CocoaLumberjack (3.6.1):
+    - CocoaLumberjack/Core (= 3.6.1)
+  - CocoaLumberjack/Core (3.6.1)
+  - CocoaLumberjack/Swift (3.6.1):
+    - CocoaLumberjack/Core
   - EFCMark (0.0.2)
   - EFMarkdown (5.0.0):
     - EFCMark (= 0.0.2)
   - HandyJSON (5.0.0)
+  - KissXML (5.3.1):
+    - KissXML/All (= 5.3.1)
+  - KissXML/Additions (5.3.1):
+    - KissXML/Core
+  - KissXML/All (5.3.1):
+    - KissXML/Additions
+    - KissXML/Core
+  - KissXML/Core (5.3.1)
+  - libidn (1.35)
   - Moya/Core (12.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.0)
@@ -16,6 +31,14 @@ PODS:
     - RxSwift (>= 4.4.2, ~> 4.4)
   - RxSwift (4.5.0)
   - SnapKit (5.0.0)
+  - XMPPFramework/default (4.0.0):
+    - CocoaAsyncSocket (~> 7.6)
+    - CocoaLumberjack
+    - KissXML (~> 5.2)
+    - libidn (~> 1.35)
+  - XMPPFramework/Swift (4.0.0):
+    - CocoaLumberjack/Swift
+    - XMPPFramework/default
 
 DEPENDENCIES:
   - Cartography (~> 3.0)
@@ -24,9 +47,10 @@ DEPENDENCIES:
   - Moya/RxSwift (~> 12.0)
   - RxCocoa
   - SnapKit
+  - XMPPFramework/Swift
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Cartography
     - EFCMark
@@ -37,19 +61,30 @@ SPEC REPOS:
     - RxCocoa
     - RxSwift
     - SnapKit
+  trunk:
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+    - KissXML
+    - libidn
+    - XMPPFramework
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   Cartography: 1988b7578871a56c036e7af17195cb2190edf18c
+  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
   EFCMark: 78fb32ed4107c8efc640ad9d20ac31cd44ce2046
   EFMarkdown: 915ff03080b95efcc737650991397322d661f1d9
   HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
+  KissXML: 5c8e0f2e8b9f071d3e1ae123dec3eb5da615c10c
+  libidn: e4576a956b797c584c77aaedfc6e3dd639b61bdc
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  XMPPFramework: 5d31ff9f73dce031b24bc49bcf88093627a3a86e
 
-PODFILE CHECKSUM: 5fbb9f6f93c597243a85f3166fc0867798ff34eb
+PODFILE CHECKSUM: 044cb8d9862bb4d246c20d7221bd7118d7c14441
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

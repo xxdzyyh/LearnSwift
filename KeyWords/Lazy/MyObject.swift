@@ -9,7 +9,7 @@
 import UIKit
 
 class MyObject: NSObject {
-	init() {
+	override init() {
 		print("MyObject Init")
 	}
 	
