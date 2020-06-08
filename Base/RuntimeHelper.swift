@@ -10,14 +10,19 @@ import UIKit
 
 class RuntimeHelper: NSObject {
     
-    static func instanceForClassName(_ className : String) -> AnyObject {
+    static func instanceForClassName(_ className : String) -> AnyObject? {
         let nameSpace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
-        let cla : AnyClass = NSClassFromString(nameSpace+"."+className)!
-        let realClass = cla as! NSObject.Type
-        
-        let obj = realClass.init();
-        
-        return obj
+		let fullName = nameSpace + "." + className
+		let cla : AnyClass? = NSClassFromString(fullName)
+		if cla != nil {
+			let realClass = cla as! NSObject.Type
+			
+			let obj = realClass.init();
+			
+			return obj
+		} else {
+			return nil
+		}
     }
     
 }

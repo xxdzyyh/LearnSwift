@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KeyWordsVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class KeyWordsVC: UIViewController {
 	
 	var tableView: UITableView!
 	var dataSource: NSArray!
@@ -16,10 +16,13 @@ class KeyWordsVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
+		
+		
 		dataSource = [["InOutVC","inOut使参数的修改可以保留"],
                       ["GuardVC","Guard"],
                       ["JSONCodableVC","Coable json 转 model"],
-                      ["HandyJSONVC","HandyJSON json 转 model"],]
+                      ["HandyJSONVC","HandyJSON json 转 model"],
+					  ["LazyVC","lazy 属性"],]
 		
 		setupTableView()
 		
@@ -35,7 +38,10 @@ class KeyWordsVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
 		tableView!.dataSource = self
 		tableView!.rowHeight = 60
 	}
-	
+}
+
+// 利用extension可以将是实现协议的代码分开，便于阅读
+extension KeyWordsVC : UITableViewDataSource, UITableViewDelegate {
 	/// MARK
 	func numberOfSections(in tableView: UITableView) -> Int {
 		return 1
@@ -67,6 +73,8 @@ class KeyWordsVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         
         let obj = RuntimeHelper.instanceForClassName(className)
         
-        self.navigationController?.pushViewController(obj as! UIViewController, animated: true)
+		if obj != nil {
+			self.navigationController?.pushViewController(obj as! UIViewController, animated: true)
+		}
     }
 }

@@ -12,12 +12,11 @@ target 'LearnSwift' do
   pod 'SnapKit'
   pod 'Cartography', '~> 3.0'
   pod 'HandyJSON'
+  pod 'XMPPFramework/Swift'
   
   target 'LearnSwiftTests' do
     inherit! :search_paths
     # Pods for testing
-
-
   end
 
 end

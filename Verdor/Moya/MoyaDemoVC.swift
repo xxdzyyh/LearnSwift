@@ -25,7 +25,7 @@ extension Api : TargetType {
     }
     
     var baseURL: URL {
-        return (URL(string: "https://api.github.com"))!
+        return (URL(string: "http://api.github.com"))!
     }
     
     var path: String {
@@ -59,36 +59,36 @@ class MoyaDemoVC : XFDemoTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /**
-         订阅全部事件
-         */
-        Api.rx.request(.zen, callbackQueue: DispatchQueue.main)
-            .asObservable()
-            .mapString()
-            .subscribe { event in 
-                switch event {
-                case let .next(response):
-                    print(response)
-                case let .error(error):
-                print(error)
-                case .completed:
-                    print("complet")
-                }
-        }.disposed(by: bag)
-        
-        Api.rx.request(.zen)
-        .asObservable()
-        .mapString()
-            .subscribe(onNext: { (s) in
-                print(s)
-            }, onError: { (e) in
-                print(e)
-            }, onCompleted: { 
-                print("complete")
-            }, onDisposed: {
-                print("dispose")
-            })
-        .disposed(by: bag)
+//        /**
+//         订阅全部事件
+//         */
+//        Api.rx.request(.zen, callbackQueue: DispatchQueue.main)
+//            .asObservable()
+//            .mapString()
+//            .subscribe { event in
+//                switch event {
+//                case let .next(response):
+//                    print(response)
+//                case let .error(error):
+//                print(error)
+//                case .completed:
+//                    print("complet")
+//                }
+//        }.disposed(by: bag)
+//
+//        Api.rx.request(.zen)
+//        .asObservable()
+//        .mapString()
+//            .subscribe(onNext: { (s) in
+//                print(s)
+//            }, onError: { (e) in
+//                print(e)
+//            }, onCompleted: {
+//                print("complete")
+//            }, onDisposed: {
+//                print("dispose")
+//            })
+//        .disposed(by: bag)
         
         /*!
          可以选择处理订阅的事件类型
@@ -100,5 +100,9 @@ class MoyaDemoVC : XFDemoTableViewController {
                 print(s)
             })
             .disposed(by: bag)
+		
+		Api.rx.request(.userProfile("xxdzyyh")).asObservable().mapString().subscribe(onNext: { (result) in
+				print(result)
+			}).disposed(by: bag)
     }
 }

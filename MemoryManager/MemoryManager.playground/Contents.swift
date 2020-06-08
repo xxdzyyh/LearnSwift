@@ -5,9 +5,11 @@ class MyObject {
     init() {
         print("MyObject init")
     }
+	
     deinit {
         print("MyObject deinit")
     }
+	
 }
 
 struct MyStruct {
@@ -15,6 +17,14 @@ struct MyStruct {
     init() {
         print("MyStruct init")
     }
+	
+	/**
+	Deinitializers may only be declared within a class
+	
+	deinit {
+		print("MyStruct init")
+	}
+	*/
 }
 
 func getConstPointerType<T> (ptr:UnsafePointer<T>) -> UnsafePointer<T> {

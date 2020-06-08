@@ -37,7 +37,7 @@ class SnapKitDemoVC : UIViewController {
         
         
         self.grayView.snp.makeConstraints() { (make) in
-            make.top.equalTo(self.redView.snp_bottom).offset(10)
+            make.top.equalTo(self.redView.snp_bottomMargin).offset(10)
             make.size.equalTo(self.redView)
             make.centerX.equalToSuperview()
         }

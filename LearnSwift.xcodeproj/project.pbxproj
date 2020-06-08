@@ -36,6 +36,8 @@
 		D4E8748C2294DFA0002C8061 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = D4E8748B2294DFA0002C8061 /* user.json */; };
 		EC8C75B120E1D1ED000BE8F9 /* AppleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C75B020E1D1ED000BE8F9 /* AppleDemo.swift */; };
 		EC8C75B520E21F99000BE8F9 /* XFDemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C75B420E21F99000BE8F9 /* XFDemoTableViewController.swift */; };
+		EC9CAE612489CB68001328FD /* AudioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CAE602489CB68001328FD /* AudioVC.swift */; };
+		EC9CAE632489D2A3001328FD /* AudioRecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CAE622489D2A3001328FD /* AudioRecordVC.swift */; };
 		ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */; };
 		ECE9728E20D9FD6700FB2ED9 /* XFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */; };
 		F58D8D95C7C0AE2BD140F9BE /* Pods_LearnSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */; };
@@ -96,6 +98,8 @@
 		D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8C75B020E1D1ED000BE8F9 /* AppleDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleDemo.swift; sourceTree = "<group>"; };
 		EC8C75B420E21F99000BE8F9 /* XFDemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XFDemoTableViewController.swift; sourceTree = "<group>"; };
+		EC9CAE602489CB68001328FD /* AudioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVC.swift; sourceTree = "<group>"; };
+		EC9CAE622489D2A3001328FD /* AudioRecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordVC.swift; sourceTree = "<group>"; };
 		ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordsVC.swift; sourceTree = "<group>"; };
 		ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XFWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +127,7 @@
 		B8709EB220D8FC2500CC4247 = {
 			isa = PBXGroup;
 			children = (
+				EC9CAE5E2489CAF8001328FD /* Audio */,
 				D4672E8122A606B400A5DE44 /* DesignPattern */,
 				D4672E7D22A4EB5300A5DE44 /* Generic */,
 				D4672E78229F7A6A00A5DE44 /* MemoryManager */,
@@ -132,6 +137,7 @@
 				EC8C75AF20E1D1D1000BE8F9 /* AppleDemo */,
 				B8709EE720DB7BE300CC4247 /* Feather */,
 				ECE9728C20D9FD5000FB2ED9 /* Base */,
+				D4E874882294DEA6002C8061 /* JSON */,
 				ECE9728920D9E6D400FB2ED9 /* KeyWords */,
 				B8709EE020D8FEA800CC4247 /* MarkDown */,
 				B8709EBD20D8FC2500CC4247 /* LearnSwift */,
@@ -343,10 +349,26 @@
 			path = AppleDemo;
 			sourceTree = "<group>";
 		};
+		EC9CAE5E2489CAF8001328FD /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				EC9CAE5F2489CB03001328FD /* Record */,
+				EC9CAE602489CB68001328FD /* AudioVC.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		EC9CAE5F2489CB03001328FD /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				EC9CAE622489D2A3001328FD /* AudioRecordVC.swift */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
 		ECE9728920D9E6D400FB2ED9 /* KeyWords */ = {
 			isa = PBXGroup;
 			children = (
-				D4E874882294DEA6002C8061 /* JSON */,
 				ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */,
 				B8709EE320DA4C6900CC4247 /* InOutVC.swift */,
 				D41951D7210F061C0006AF02 /* GuardVC.swift */,
@@ -563,6 +585,8 @@
 				D4CEB6D1225B20DB007E4B55 /* RxSwiftDemoVC.swift in Sources */,
 				EC8C75B520E21F99000BE8F9 /* XFDemoTableViewController.swift in Sources */,
 				D41951D8210F061C0006AF02 /* GuardVC.swift in Sources */,
+				EC9CAE632489D2A3001328FD /* AudioRecordVC.swift in Sources */,
+				EC9CAE612489CB68001328FD /* AudioVC.swift in Sources */,
 				ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */,
 				D40DE7B32252106C007ADE19 /* VarTypeVC.swift in Sources */,
 				B8709EE220D8FECD00CC4247 /* MarkDownPreviewVC.swift in Sources */,
@@ -739,7 +763,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BN7E4W99SM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LearnSwift/Info.plist;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -756,7 +780,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BN7E4W99SM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LearnSwift/Info.plist;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
