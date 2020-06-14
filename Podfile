@@ -13,7 +13,8 @@ target 'LearnSwift' do
   pod 'Cartography', '~> 3.0'
   pod 'HandyJSON'
   pod 'XMPPFramework/Swift'
-  
+  pod "MarkdownView"
+	
   target 'LearnSwiftTests' do
     inherit! :search_paths
     # Pods for testing

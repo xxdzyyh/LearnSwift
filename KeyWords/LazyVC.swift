@@ -22,7 +22,6 @@ class LazyVC: UIViewController {
         super.viewDidLoad()
 		print("viewDidLoad")
 		print(myObject)
-        // Do any additional setup after loading the view.
     }
 }
 

@@ -16,13 +16,12 @@ class KeyWordsVC: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		
-		
 		dataSource = [["InOutVC","inOut使参数的修改可以保留"],
                       ["GuardVC","Guard"],
                       ["JSONCodableVC","Coable json 转 model"],
                       ["HandyJSONVC","HandyJSON json 转 model"],
-					  ["LazyVC","lazy 属性"],]
+					  ["LazyVC","lazy"],
+					  ["AnyVC","Any AnyObject AnyClass"],]
 		
 		setupTableView()
 		

@@ -20,6 +20,7 @@ PODS:
     - KissXML/Core
   - KissXML/Core (5.3.1)
   - libidn (1.35)
+  - MarkdownView (1.6.0)
   - Moya/Core (12.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.0)
@@ -44,6 +45,7 @@ DEPENDENCIES:
   - Cartography (~> 3.0)
   - EFMarkdown
   - HandyJSON
+  - MarkdownView
   - Moya/RxSwift (~> 12.0)
   - RxCocoa
   - SnapKit
@@ -66,6 +68,7 @@ SPEC REPOS:
     - CocoaLumberjack
     - KissXML
     - libidn
+    - MarkdownView
     - XMPPFramework
 
 SPEC CHECKSUMS:
@@ -78,6 +81,7 @@ SPEC CHECKSUMS:
   HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
   KissXML: 5c8e0f2e8b9f071d3e1ae123dec3eb5da615c10c
   libidn: e4576a956b797c584c77aaedfc6e3dd639b61bdc
+  MarkdownView: 25c1c2d7ff9706624a575556296e188be3dd3f6b
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
@@ -85,6 +89,6 @@ SPEC CHECKSUMS:
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   XMPPFramework: 5d31ff9f73dce031b24bc49bcf88093627a3a86e
 
-PODFILE CHECKSUM: 044cb8d9862bb4d246c20d7221bd7118d7c14441
+PODFILE CHECKSUM: c3fccc4dd30700cf8abd01bbabf6d89d592c046c
 
 COCOAPODS: 1.8.4

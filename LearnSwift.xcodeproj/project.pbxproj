@@ -40,6 +40,8 @@
 		EC9CAE632489D2A3001328FD /* AudioRecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CAE622489D2A3001328FD /* AudioRecordVC.swift */; };
 		EC9CAE66248A711D001328FD /* MyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CAE65248A711D001328FD /* MyObject.swift */; };
 		EC9CAE68248A718A001328FD /* LazyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CAE67248A718A001328FD /* LazyVC.swift */; };
+		EC9CAE7324935CC2001328FD /* AnyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9CAE7224935CC2001328FD /* AnyVC.swift */; };
+		EC9CAE7524936228001328FD /* Any.md in Resources */ = {isa = PBXBuildFile; fileRef = EC9CAE7424936228001328FD /* Any.md */; };
 		ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */; };
 		ECE9728E20D9FD6700FB2ED9 /* XFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */; };
 		F58D8D95C7C0AE2BD140F9BE /* Pods_LearnSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */; };
@@ -104,6 +106,8 @@
 		EC9CAE622489D2A3001328FD /* AudioRecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordVC.swift; sourceTree = "<group>"; };
 		EC9CAE65248A711D001328FD /* MyObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyObject.swift; sourceTree = "<group>"; };
 		EC9CAE67248A718A001328FD /* LazyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVC.swift; sourceTree = "<group>"; };
+		EC9CAE7224935CC2001328FD /* AnyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyVC.swift; sourceTree = "<group>"; };
+		EC9CAE7424936228001328FD /* Any.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Any.md; sourceTree = "<group>"; };
 		ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordsVC.swift; sourceTree = "<group>"; };
 		ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XFWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -389,11 +393,13 @@
 		ECE9728920D9E6D400FB2ED9 /* KeyWords */ = {
 			isa = PBXGroup;
 			children = (
+				EC9CAE7424936228001328FD /* Any.md */,
 				EC9CAE67248A718A001328FD /* LazyVC.swift */,
 				EC9CAE64248A70F6001328FD /* Lazy */,
 				ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */,
 				B8709EE320DA4C6900CC4247 /* InOutVC.swift */,
 				D41951D7210F061C0006AF02 /* GuardVC.swift */,
+				EC9CAE7224935CC2001328FD /* AnyVC.swift */,
 			);
 			path = KeyWords;
 			sourceTree = "<group>";
@@ -495,6 +501,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9CAE7524936228001328FD /* Any.md in Resources */,
 				D4E8748C2294DFA0002C8061 /* user.json in Resources */,
 				B8709ECB20D8FC2500CC4247 /* LaunchScreen.storyboard in Resources */,
 				B8709EC820D8FC2500CC4247 /* Assets.xcassets in Resources */,
@@ -554,34 +561,46 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LearnSwift/Pods-LearnSwift-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LearnSwift/Pods-LearnSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/EFCMark/EFCMark.framework",
 				"${BUILT_PRODUCTS_DIR}/EFMarkdown/EFMarkdown.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/KissXML/KissXML.framework",
+				"${BUILT_PRODUCTS_DIR}/MarkdownView/MarkdownView.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/XMPPFramework/XMPPFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/libidn/libidn.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EFCMark.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EFMarkdown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KissXML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarkdownView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMPPFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libidn.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnSwift/Pods-LearnSwift-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LearnSwift/Pods-LearnSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D4672E712297F36F00A5DE44 /* ShellScript */ = {
@@ -611,6 +630,7 @@
 				EC9CAE612489CB68001328FD /* AudioVC.swift in Sources */,
 				ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */,
 				EC9CAE68248A718A001328FD /* LazyVC.swift in Sources */,
+				EC9CAE7324935CC2001328FD /* AnyVC.swift in Sources */,
 				D40DE7B32252106C007ADE19 /* VarTypeVC.swift in Sources */,
 				B8709EE220D8FECD00CC4247 /* MarkDownPreviewVC.swift in Sources */,
 				D4CEB6CE225AE93F007E4B55 /* MoyaDemoVC.swift in Sources */,
