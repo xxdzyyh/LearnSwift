@@ -19,8 +19,8 @@ class MasterViewController: UITableViewController {
 		self.view.backgroundColor = .orange
 		self.tableView.backgroundColor = .red
 	
-        
-        objects = [["AudioVC","音频"],
+        objects = [["CircleProgressVC","圆形进度"],
+                   ["AudioVC","音频"],
 				   ["MemoryManagerVC","内存管理"],
                    ["KeyWordsVC","swift关键字"],
 				   ["访问控制","http://www.runoob.com/swift/swift-access-control.html"],

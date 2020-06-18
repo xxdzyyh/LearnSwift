@@ -45,6 +45,8 @@
 		ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */; };
 		ECE9728E20D9FD6700FB2ED9 /* XFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */; };
 		F58D8D95C7C0AE2BD140F9BE /* Pods_LearnSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */; };
+		FE744EAD249B48D4007635BF /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE744EAC249B48D4007635BF /* CircleProgressView.swift */; };
+		FE744EAF249B4907007635BF /* CircleProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE744EAE249B4907007635BF /* CircleProgressVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,8 @@
 		EC9CAE7424936228001328FD /* Any.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Any.md; sourceTree = "<group>"; };
 		ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordsVC.swift; sourceTree = "<group>"; };
 		ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XFWebViewController.swift; sourceTree = "<group>"; };
+		FE744EAC249B48D4007635BF /* CircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
+		FE744EAE249B4907007635BF /* CircleProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 		B8709EB220D8FC2500CC4247 = {
 			isa = PBXGroup;
 			children = (
+				FE744EAB249B48C8007635BF /* XFoundation */,
+				EC9CAE65248A711D001328FD /* MyObject.swift */,
 				EC9CAE69248DDD93001328FD /* XMPP */,
 				EC9CAE5E2489CAF8001328FD /* Audio */,
 				D4672E8122A606B400A5DE44 /* DesignPattern */,
@@ -378,7 +384,6 @@
 		EC9CAE64248A70F6001328FD /* Lazy */ = {
 			isa = PBXGroup;
 			children = (
-				EC9CAE65248A711D001328FD /* MyObject.swift */,
 			);
 			path = Lazy;
 			sourceTree = "<group>";
@@ -412,6 +417,15 @@
 				B8709EE520DA4CFE00CC4247 /* RuntimeHelper.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		FE744EAB249B48C8007635BF /* XFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				FE744EAC249B48D4007635BF /* CircleProgressView.swift */,
+				FE744EAE249B4907007635BF /* CircleProgressVC.swift */,
+			);
+			path = XFoundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -640,6 +654,7 @@
 				B8709EEB20DB7D5B00CC4247 /* FeathersVC.swift in Sources */,
 				D4672E6E22977B6400A5DE44 /* HandyJSONVC.swift in Sources */,
 				D4E8748A2294DEC0002C8061 /* JSONCodableVC.swift in Sources */,
+				FE744EAF249B4907007635BF /* CircleProgressVC.swift in Sources */,
 				B8709EE620DA4CFE00CC4247 /* RuntimeHelper.swift in Sources */,
 				D4CEB6D3225B399D007E4B55 /* PropertyDemoVC.swift in Sources */,
 				B8709EC320D8FC2500CC4247 /* DetailViewController.swift in Sources */,
@@ -652,6 +667,7 @@
 				B8709EBF20D8FC2500CC4247 /* AppDelegate.swift in Sources */,
 				EC8C75B120E1D1ED000BE8F9 /* AppleDemo.swift in Sources */,
 				EC9CAE66248A711D001328FD /* MyObject.swift in Sources */,
+				FE744EAD249B48D4007635BF /* CircleProgressView.swift in Sources */,
 				D44B2A252180568C009A84B6 /* XBaseRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
