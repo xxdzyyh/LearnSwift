@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CircleProgressView: UIView {
+class XCircleProgressView: UIView {
 
     var lineWidth : CGFloat = 4.0
     var lineColor : UIColor = UIColor.orange
@@ -17,21 +17,9 @@ class CircleProgressView: UIView {
         }
     }
     
-    var staticTip : String? {
+    var tip : String? {
         didSet {
-            self.tipLabel.text = staticTip
-            
-            if (self.tipLabel.superview == nil) {
-                self.tipLabel.frame = CGRect(x:0,y:0,width: self.bounds.size.width,height: self.tipLabel.font.lineHeight)
-                self.tipLabel.center = CGPoint(x:self.bounds.size.width/2,y:self.bounds.size.height/2)
-                self.addSubview(self.tipLabel)
-            }
-        }
-    }
-    
-    var dynamicTip : String? {
-        didSet {
-            self.tipLabel.text = dynamicTip
+            self.tipLabel.text = tip
             
             if (self.tipLabel.superview == nil) {
                 self.tipLabel.frame = CGRect(x:0,y:0,width: self.bounds.size.width,height: self.tipLabel.font.lineHeight)
@@ -63,10 +51,10 @@ class CircleProgressView: UIView {
         }
 
         context!.addArc(center: CGPoint(x:rect.size.width * 0.5,y:rect.size.height * 0.5),
-                    radius: rect.size.width * 0.5 - lineWidth * 0.5,
-                    startAngle: CGFloat(-Double.pi/2),
-                    endAngle: 2.0 * CGFloat(Double.pi) * progress - CGFloat(Double.pi/2),
-                    clockwise: false)
+                        radius: rect.size.width * 0.5 - lineWidth * 0.5,
+                        startAngle: CGFloat(-Double.pi/2),
+                        endAngle: 2.0 * CGFloat(Double.pi) * progress - CGFloat(Double.pi/2),
+                        clockwise: false)
         context!.setLineCap(.round);
         context!.setLineWidth(lineWidth);
         context!.setStrokeColor(lineColor.cgColor);
@@ -81,4 +69,6 @@ class CircleProgressView: UIView {
         return v
     }()
 }
+
+
 

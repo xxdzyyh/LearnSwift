@@ -10,8 +10,8 @@ import UIKit
 
 class CircleProgressVC: UIViewController {
 
-    lazy var progressView: CircleProgressView = {
-        return CircleProgressView()
+    lazy var progressView: XCircleProgressView = {
+        return XCircleProgressView()
     }()
     
     override func viewDidLoad() {
@@ -24,7 +24,7 @@ class CircleProgressVC: UIViewController {
         
         Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (timer) in
             self.progressView.progress = self.progressView.progress + 0.05
-            self.progressView.staticTip = String.init(format: "%d",Int(self.progressView.progress*100)).appending("%")
+            self.progressView.tip = String.init(format: "%d",Int(self.progressView.progress*100)).appending("%")
         }
     }
 

@@ -45,7 +45,7 @@
 		ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */; };
 		ECE9728E20D9FD6700FB2ED9 /* XFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */; };
 		F58D8D95C7C0AE2BD140F9BE /* Pods_LearnSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */; };
-		FE744EAD249B48D4007635BF /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE744EAC249B48D4007635BF /* CircleProgressView.swift */; };
+		FE744EAD249B48D4007635BF /* XCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE744EAC249B48D4007635BF /* XCircleProgressView.swift */; };
 		FE744EAF249B4907007635BF /* CircleProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE744EAE249B4907007635BF /* CircleProgressVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -112,7 +112,7 @@
 		EC9CAE7424936228001328FD /* Any.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Any.md; sourceTree = "<group>"; };
 		ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordsVC.swift; sourceTree = "<group>"; };
 		ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XFWebViewController.swift; sourceTree = "<group>"; };
-		FE744EAC249B48D4007635BF /* CircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
+		FE744EAC249B48D4007635BF /* XCircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCircleProgressView.swift; sourceTree = "<group>"; };
 		FE744EAE249B4907007635BF /* CircleProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -422,10 +422,26 @@
 		FE744EAB249B48C8007635BF /* XFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				FE744EAC249B48D4007635BF /* CircleProgressView.swift */,
+				FE744EB1249B94B1007635BF /* View */,
+				FE744EB0249B94A5007635BF /* Demo */,
 				FE744EAE249B4907007635BF /* CircleProgressVC.swift */,
 			);
 			path = XFoundation;
+			sourceTree = "<group>";
+		};
+		FE744EB0249B94A5007635BF /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		FE744EB1249B94B1007635BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE744EAC249B48D4007635BF /* XCircleProgressView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -667,7 +683,7 @@
 				B8709EBF20D8FC2500CC4247 /* AppDelegate.swift in Sources */,
 				EC8C75B120E1D1ED000BE8F9 /* AppleDemo.swift in Sources */,
 				EC9CAE66248A711D001328FD /* MyObject.swift in Sources */,
-				FE744EAD249B48D4007635BF /* CircleProgressView.swift in Sources */,
+				FE744EAD249B48D4007635BF /* XCircleProgressView.swift in Sources */,
 				D44B2A252180568C009A84B6 /* XBaseRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
