@@ -12,7 +12,7 @@
 
  func startTimer() {
      if self.timer == nil {
-         let timerProxy = TimerProxy()
+         let timerProxy = XTimerProxy()
          timerProxy.delegate = self
          let timer = Timer(timeInterval: 1, target: timerProxy, selector: NSSelectorFromString("timerAction"), userInfo: nil, repeats: true)
          RunLoop.current.add(timer, forMode: .common)
@@ -30,20 +30,16 @@
  */
 import UIKit
 
-@objc protocol TimerProxyDelegate {
+@objc protocol XTimerProxyDelegate {
     @objc func timerAction()
 }
 
-class TimerProxy : NSObject,TimerProxyDelegate {
-    weak var delegate : TimerProxyDelegate?
+class XTimerProxy : NSObject,XTimerProxyDelegate {
+    weak var delegate : XTimerProxyDelegate?
     
     @objc public func timerAction() {
         if self.delegate != nil {
             self.delegate?.timerAction()
         }
-    }
-    
-    deinit {
-        print("TimerProxy deinit")
     }
 }
