@@ -84,11 +84,8 @@ class XFWebViewController : UIViewController {
 	override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
 		
 		if ((keyPath?.elementsEqual("estimatedProgress"))! && webView.isEqual(object)) {
-	
 			DispatchQueue.main.async {
 				self.progressView.isHidden = false
-//				self.progressView.setProgress(Float(self.webView!.estimatedProgress), animated: false)
-				
 				self.progressView.progress = Float(self.webView!.estimatedProgress)
 				
 				print(Float(self.webView!.estimatedProgress))

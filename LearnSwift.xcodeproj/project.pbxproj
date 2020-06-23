@@ -47,6 +47,7 @@
 		F58D8D95C7C0AE2BD140F9BE /* Pods_LearnSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */; };
 		FE744EAD249B48D4007635BF /* XCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE744EAC249B48D4007635BF /* XCircleProgressView.swift */; };
 		FE744EAF249B4907007635BF /* CircleProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE744EAE249B4907007635BF /* CircleProgressVC.swift */; };
+		FE9F671524A1A562002E0012 /* XTimerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F671424A1A562002E0012 /* XTimerProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XFWebViewController.swift; sourceTree = "<group>"; };
 		FE744EAC249B48D4007635BF /* XCircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCircleProgressView.swift; sourceTree = "<group>"; };
 		FE744EAE249B4907007635BF /* CircleProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressVC.swift; sourceTree = "<group>"; };
+		FE9F671424A1A562002E0012 /* XTimerProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTimerProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -422,6 +424,7 @@
 		FE744EAB249B48C8007635BF /* XFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				FE9F671324A1A536002E0012 /* Tool */,
 				FE744EB1249B94B1007635BF /* View */,
 				FE744EB0249B94A5007635BF /* Demo */,
 				FE744EAE249B4907007635BF /* CircleProgressVC.swift */,
@@ -442,6 +445,14 @@
 				FE744EAC249B48D4007635BF /* XCircleProgressView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FE9F671324A1A536002E0012 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				FE9F671424A1A562002E0012 /* XTimerProxy.swift */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -683,6 +694,7 @@
 				B8709EBF20D8FC2500CC4247 /* AppDelegate.swift in Sources */,
 				EC8C75B120E1D1ED000BE8F9 /* AppleDemo.swift in Sources */,
 				EC9CAE66248A711D001328FD /* MyObject.swift in Sources */,
+				FE9F671524A1A562002E0012 /* XTimerProxy.swift in Sources */,
 				FE744EAD249B48D4007635BF /* XCircleProgressView.swift in Sources */,
 				D44B2A252180568C009A84B6 /* XBaseRequest.swift in Sources */,
 			);

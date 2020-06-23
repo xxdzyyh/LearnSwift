@@ -10,16 +10,16 @@ import UIKit
 
 class RuntimeHelper: NSObject {
     
-    static func instanceForClassName(_ className : String) -> AnyObject? {
+    /// 通过类名创建实例对象
+    /// - Parameter className: 类名
+    /// - Returns: 实例对象
+    static func instanceForClassName(_ className : String) -> NSObject? {
         let nameSpace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
 		let fullName = nameSpace + "." + className
 		let cla : AnyClass? = NSClassFromString(fullName)
 		if cla != nil {
-			let realClass = cla as! NSObject.Type
-			
-			let obj = realClass.init();
-			
-			return obj
+            let realClass = cla as! NSObject.Type
+            return realClass.init();
 		} else {
 			return nil
 		}
