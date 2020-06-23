@@ -1,5 +1,5 @@
 //
-//  CircleProgressView.swift
+//  XCircleProgressView.swift
 //  SPARKVIDEO
 //
 //  Created by sckj on 2020/6/18.
@@ -9,6 +9,9 @@ import UIKit
 
 class XCircleProgressView: UIView {
 
+    // 倒计时，进度从1到0
+    var countDown = false
+    
     var lineWidth : CGFloat = 4.0
     var lineColor : UIColor = UIColor.orange
     var progress : CGFloat = 0 {
@@ -49,12 +52,24 @@ class XCircleProgressView: UIView {
         if context == nil {
             return
         }
-
-        context!.addArc(center: CGPoint(x:rect.size.width * 0.5,y:rect.size.height * 0.5),
-                        radius: rect.size.width * 0.5 - lineWidth * 0.5,
-                        startAngle: CGFloat(-Double.pi/2),
-                        endAngle: 2.0 * CGFloat(Double.pi) * progress - CGFloat(Double.pi/2),
-                        clockwise: false)
+        
+        let mPath = CGMutablePath.init()
+        
+        if self.countDown == false {
+            mPath.addArc(center: CGPoint(x:rect.size.width * 0.5,y:rect.size.height * 0.5),
+                               radius: rect.size.width * 0.5 - lineWidth * 0.5,
+                               startAngle: CGFloat(-Double.pi/2),
+                               endAngle: 2.0 * CGFloat(Double.pi) * progress - CGFloat(Double.pi/2),
+                               clockwise: false)
+        } else {
+            mPath.addArc(center: CGPoint(x:rect.size.width * 0.5,y:rect.size.height * 0.5),
+                               radius: rect.size.width * 0.5 - lineWidth * 0.5,
+                               startAngle: CGFloat(-Double.pi/2) + 2.0 * CGFloat(Double.pi) * (1 - progress),
+                               endAngle: 2.0 * CGFloat(Double.pi) - CGFloat(Double.pi/2),
+                               clockwise: false)
+        }
+       
+        context!.addPath(mPath)
         context!.setLineCap(.round);
         context!.setLineWidth(lineWidth);
         context!.setStrokeColor(lineColor.cgColor);
