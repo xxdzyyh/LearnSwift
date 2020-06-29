@@ -36,13 +36,24 @@ enum ActionType {
 
 class XFDemoTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-	var tableView : UITableView!
-	var dataSource: NSArray!
+    lazy var tableView : UITableView = {
+        let tableView = UITableView(frame: CGRect.zero, style: .plain)
+        tableView.delegate = self;
+        tableView.dataSource = self;
+        tableView.rowHeight = 60
+        return tableView
+    }()
     
-    func loadData(data : NSArray) -> Void {
-        dataSource = data
-        
-        self.tableView.reloadData()
+    var dataSource: NSArray! {
+        didSet {
+            if Thread.current.isMainThread {
+                self.tableView.reloadData()
+            } else {
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+        }
     }
     
 	override func viewDidLoad() {
@@ -50,18 +61,11 @@ class XFDemoTableViewController: UIViewController, UITableViewDataSource, UITabl
 		
 		dataSource = [];
 		
-		setupTableView()
-		self.view.addSubview(self.tableView!)
+		
+		self.view.addSubview(self.tableView)
 		self.tableView.frame = self.view.bounds
 	}
 	
-	func setupTableView() {
-		tableView = UITableView(frame: CGRect.zero, style: .plain)
-		
-		tableView.delegate = self;
-		tableView.dataSource = self;
-		tableView.rowHeight = 60
-	}
 	
 	///MARK
 	func numberOfSections(in tableView: UITableView) -> Int {

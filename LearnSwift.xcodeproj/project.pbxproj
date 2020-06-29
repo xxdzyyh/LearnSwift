@@ -45,6 +45,10 @@
 		ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */; };
 		ECE9728E20D9FD6700FB2ED9 /* XFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */; };
 		F58D8D95C7C0AE2BD140F9BE /* Pods_LearnSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D75FA2F6EDA286272D87A9 /* Pods_LearnSwiftTests.framework */; };
+		FE152CC424A202CB00C44116 /* EnumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE152CC324A202CB00C44116 /* EnumVC.swift */; };
+		FE152CC724A20CB100C44116 /* TypeSelfVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE152CC624A20CB100C44116 /* TypeSelfVC.swift */; };
+		FE684A1D24A8AE9900551E2B /* DisposeBagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE684A1C24A8AE9900551E2B /* DisposeBagVC.swift */; };
+		FE684A1F24A8B1AB00551E2B /* RxSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE684A1E24A8B1AB00551E2B /* RxSwiftVC.swift */; };
 		FE744EAD249B48D4007635BF /* XCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE744EAC249B48D4007635BF /* XCircleProgressView.swift */; };
 		FE744EAF249B4907007635BF /* CircleProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE744EAE249B4907007635BF /* CircleProgressVC.swift */; };
 		FE9F671524A1A562002E0012 /* XTimerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F671424A1A562002E0012 /* XTimerProxy.swift */; };
@@ -113,6 +117,11 @@
 		EC9CAE7424936228001328FD /* Any.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Any.md; sourceTree = "<group>"; };
 		ECE9728A20D9E6F400FB2ED9 /* KeyWordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordsVC.swift; sourceTree = "<group>"; };
 		ECE9728D20D9FD6700FB2ED9 /* XFWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XFWebViewController.swift; sourceTree = "<group>"; };
+		FE152CC324A202CB00C44116 /* EnumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumVC.swift; sourceTree = "<group>"; };
+		FE152CC524A20A7A00C44116 /* EnumPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EnumPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FE152CC624A20CB100C44116 /* TypeSelfVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSelfVC.swift; sourceTree = "<group>"; };
+		FE684A1C24A8AE9900551E2B /* DisposeBagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeBagVC.swift; sourceTree = "<group>"; };
+		FE684A1E24A8B1AB00551E2B /* RxSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftVC.swift; sourceTree = "<group>"; };
 		FE744EAC249B48D4007635BF /* XCircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCircleProgressView.swift; sourceTree = "<group>"; };
 		FE744EAE249B4907007635BF /* CircleProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressVC.swift; sourceTree = "<group>"; };
 		FE9F671424A1A562002E0012 /* XTimerProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTimerProxy.swift; sourceTree = "<group>"; };
@@ -141,6 +150,7 @@
 		B8709EB220D8FC2500CC4247 = {
 			isa = PBXGroup;
 			children = (
+				FE152CC224A2029500C44116 /* Enum */,
 				FE744EAB249B48C8007635BF /* XFoundation */,
 				EC9CAE65248A711D001328FD /* MyObject.swift */,
 				EC9CAE69248DDD93001328FD /* XMPP */,
@@ -247,6 +257,8 @@
 			isa = PBXGroup;
 			children = (
 				D4672E73229CD41400A5DE44 /* RxSwiftPlayground.playground */,
+				FE684A1C24A8AE9900551E2B /* DisposeBagVC.swift */,
+				FE684A1E24A8B1AB00551E2B /* RxSwiftVC.swift */,
 			);
 			path = RxSwift;
 			sourceTree = "<group>";
@@ -407,6 +419,7 @@
 				B8709EE320DA4C6900CC4247 /* InOutVC.swift */,
 				D41951D7210F061C0006AF02 /* GuardVC.swift */,
 				EC9CAE7224935CC2001328FD /* AnyVC.swift */,
+				FE152CC624A20CB100C44116 /* TypeSelfVC.swift */,
 			);
 			path = KeyWords;
 			sourceTree = "<group>";
@@ -419,6 +432,15 @@
 				B8709EE520DA4CFE00CC4247 /* RuntimeHelper.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		FE152CC224A2029500C44116 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				FE152CC324A202CB00C44116 /* EnumVC.swift */,
+				FE152CC524A20A7A00C44116 /* EnumPlayground.playground */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 		FE744EAB249B48C8007635BF /* XFoundation */ = {
@@ -667,6 +689,8 @@
 				D4CEB6D1225B20DB007E4B55 /* RxSwiftDemoVC.swift in Sources */,
 				EC8C75B520E21F99000BE8F9 /* XFDemoTableViewController.swift in Sources */,
 				D41951D8210F061C0006AF02 /* GuardVC.swift in Sources */,
+				FE684A1D24A8AE9900551E2B /* DisposeBagVC.swift in Sources */,
+				FE152CC724A20CB100C44116 /* TypeSelfVC.swift in Sources */,
 				EC9CAE632489D2A3001328FD /* AudioRecordVC.swift in Sources */,
 				EC9CAE612489CB68001328FD /* AudioVC.swift in Sources */,
 				ECE9728B20D9E6F400FB2ED9 /* KeyWordsVC.swift in Sources */,
@@ -686,7 +710,9 @@
 				D4CEB6D3225B399D007E4B55 /* PropertyDemoVC.swift in Sources */,
 				B8709EC320D8FC2500CC4247 /* DetailViewController.swift in Sources */,
 				B8709EE420DA4C6900CC4247 /* InOutVC.swift in Sources */,
+				FE684A1F24A8B1AB00551E2B /* RxSwiftVC.swift in Sources */,
 				ECE9728E20D9FD6700FB2ED9 /* XFWebViewController.swift in Sources */,
+				FE152CC424A202CB00C44116 /* EnumVC.swift in Sources */,
 				D44B2A27218057DE009A84B6 /* XTokenRequest.swift in Sources */,
 				D4672E7A229F7A9200A5DE44 /* MemoryManagerVC.swift in Sources */,
 				B8709EC120D8FC2500CC4247 /* MasterViewController.swift in Sources */,

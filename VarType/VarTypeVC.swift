@@ -15,8 +15,6 @@ class VarTypeVC : XFDemoTableViewController {
         
         dataSource = [[ActionKey.value:"dictionary",ActionKey.key:ActionType.Method],
                       [ActionKey.value:"array",ActionKey.key:ActionType.Method]];
-        
-        loadData(data: dataSource)
     }
     
     @objc func dictionary() {

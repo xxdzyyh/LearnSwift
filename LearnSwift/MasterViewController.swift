@@ -19,7 +19,10 @@ class MasterViewController: UITableViewController {
 		self.view.backgroundColor = .orange
 		self.tableView.backgroundColor = .red
 	
-        objects = [["CircleProgressVC","圆形进度"],
+        objects = [
+                   ["RxSwiftVC","枚举"],
+                   ["EnumVC","枚举"],
+                   ["CircleProgressVC","圆形进度"],
                    ["AudioVC","音频"],
 				   ["MemoryManagerVC","内存管理"],
                    ["KeyWordsVC","swift关键字"],
