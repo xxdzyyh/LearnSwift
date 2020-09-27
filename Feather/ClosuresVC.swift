@@ -36,6 +36,10 @@ class ClosuresVC: MarkDownPreviewVC {
         trailingClosure { i in 
             return (i * 2)
         }
+        
+        trailingClosure {
+            $0 * 2
+        }
     }
     
     func originClosures() {

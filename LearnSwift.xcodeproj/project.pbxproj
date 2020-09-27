@@ -49,6 +49,9 @@
 		FE152CC724A20CB100C44116 /* TypeSelfVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE152CC624A20CB100C44116 /* TypeSelfVC.swift */; };
 		FE4A390924BFF6DD007E9907 /* withLatestFromVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4A390824BFF6DD007E9907 /* withLatestFromVC.swift */; };
 		FE559BC324B3097E0072FD46 /* ObservableCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE559BC124B3097E0072FD46 /* ObservableCreateVC.swift */; };
+		FE5AA16C24FA424F005F3060 /* DeferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5AA16B24FA424F005F3060 /* DeferVC.swift */; };
+		FE61811324C5739300E1347E /* SingleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61811224C5739300E1347E /* SingleVC.swift */; };
+		FE66813025189C8300AAF2C9 /* ClassVSStructVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE66812F25189C8300AAF2C9 /* ClassVSStructVC.swift */; };
 		FE684A1D24A8AE9900551E2B /* DisposeBagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE684A1C24A8AE9900551E2B /* DisposeBagVC.swift */; };
 		FE684A1F24A8B1AB00551E2B /* RxSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE684A1E24A8B1AB00551E2B /* RxSwiftVC.swift */; };
 		FE744EAD249B48D4007635BF /* XCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE744EAC249B48D4007635BF /* XCircleProgressView.swift */; };
@@ -125,6 +128,9 @@
 		FE152CC624A20CB100C44116 /* TypeSelfVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSelfVC.swift; sourceTree = "<group>"; };
 		FE4A390824BFF6DD007E9907 /* withLatestFromVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withLatestFromVC.swift; sourceTree = "<group>"; };
 		FE559BC124B3097E0072FD46 /* ObservableCreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableCreateVC.swift; sourceTree = "<group>"; };
+		FE5AA16B24FA424F005F3060 /* DeferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeferVC.swift; sourceTree = "<group>"; };
+		FE61811224C5739300E1347E /* SingleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleVC.swift; sourceTree = "<group>"; };
+		FE66812F25189C8300AAF2C9 /* ClassVSStructVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassVSStructVC.swift; sourceTree = "<group>"; };
 		FE684A1C24A8AE9900551E2B /* DisposeBagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeBagVC.swift; sourceTree = "<group>"; };
 		FE684A1E24A8B1AB00551E2B /* RxSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftVC.swift; sourceTree = "<group>"; };
 		FE744EAC249B48D4007635BF /* XCircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCircleProgressView.swift; sourceTree = "<group>"; };
@@ -268,6 +274,7 @@
 				FE684A1E24A8B1AB00551E2B /* RxSwiftVC.swift */,
 				FE559BC124B3097E0072FD46 /* ObservableCreateVC.swift */,
 				FE4A390824BFF6DD007E9907 /* withLatestFromVC.swift */,
+				FE61811224C5739300E1347E /* SingleVC.swift */,
 			);
 			path = RxSwift;
 			sourceTree = "<group>";
@@ -430,6 +437,8 @@
 				EC9CAE7224935CC2001328FD /* AnyVC.swift */,
 				FE152CC624A20CB100C44116 /* TypeSelfVC.swift */,
 				FE9800BF24B6F2D00044760D /* KeywordsPlayground.playground */,
+				FE5AA16B24FA424F005F3060 /* DeferVC.swift */,
+				FE66812F25189C8300AAF2C9 /* ClassVSStructVC.swift */,
 			);
 			path = KeyWords;
 			sourceTree = "<group>";
@@ -707,6 +716,7 @@
 			files = (
 				D4CEB6D1225B20DB007E4B55 /* RxSwiftDemoVC.swift in Sources */,
 				EC8C75B520E21F99000BE8F9 /* XFDemoTableViewController.swift in Sources */,
+				FE61811324C5739300E1347E /* SingleVC.swift in Sources */,
 				D41951D8210F061C0006AF02 /* GuardVC.swift in Sources */,
 				FE684A1D24A8AE9900551E2B /* DisposeBagVC.swift in Sources */,
 				FE152CC724A20CB100C44116 /* TypeSelfVC.swift in Sources */,
@@ -723,6 +733,7 @@
 				B8709EE920DB7C0C00CC4247 /* ClosuresVC.swift in Sources */,
 				B8709EEB20DB7D5B00CC4247 /* FeathersVC.swift in Sources */,
 				D4672E6E22977B6400A5DE44 /* HandyJSONVC.swift in Sources */,
+				FE5AA16C24FA424F005F3060 /* DeferVC.swift in Sources */,
 				FEC3C37C24C14C320009DF3F /* String+XF.swift in Sources */,
 				D4E8748A2294DEC0002C8061 /* JSONCodableVC.swift in Sources */,
 				FE744EAF249B4907007635BF /* CircleProgressVC.swift in Sources */,
@@ -739,6 +750,7 @@
 				D4672E7A229F7A9200A5DE44 /* MemoryManagerVC.swift in Sources */,
 				B8709EC120D8FC2500CC4247 /* MasterViewController.swift in Sources */,
 				D4CEB6CB225ADEF9007E4B55 /* SnapKitDemoVC.swift in Sources */,
+				FE66813025189C8300AAF2C9 /* ClassVSStructVC.swift in Sources */,
 				B8709EBF20D8FC2500CC4247 /* AppDelegate.swift in Sources */,
 				EC8C75B120E1D1ED000BE8F9 /* AppleDemo.swift in Sources */,
 				EC9CAE66248A711D001328FD /* MyObject.swift in Sources */,
@@ -899,7 +911,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BN7E4W99SM;
+				DEVELOPMENT_TEAM = 99978K4746;
 				INFOPLIST_FILE = LearnSwift/Info.plist;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -916,7 +928,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BN7E4W99SM;
+				DEVELOPMENT_TEAM = 99978K4746;
 				INFOPLIST_FILE = LearnSwift/Info.plist;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

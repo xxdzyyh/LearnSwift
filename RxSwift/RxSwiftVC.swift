@@ -17,7 +17,8 @@ class RxSwiftVC: XFDemoTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dataSource = [[ActionKey.value:"showDisposeBagVC",ActionKey.key:ActionType.Method],]
+        dataSource = [[ActionKey.value:"showDisposeBagVC",ActionKey.key.rawValue:ActionType.Method],
+                      [ActionKey.value : "withLatestFromVC",ActionKey.key.rawValue:ActionType.ViewController]]
     }
     
     

@@ -28,15 +28,18 @@ case let .userInfo(userId):
     print("userInfo \(userId)")
 }
 
-enum Direction : Float {
+enum Direction : String {
     case e
     case s
     case w
     case n
 }
 
-////let a = Direction.e.rawValue
-////let b = Direction.w.rawValue
+let a = Direction.e.rawValue
+let b = Direction.w.rawValue
+
+
+
 //
 //enum Name : String {
 //    case Tom
@@ -44,7 +47,7 @@ enum Direction : Float {
 //    case Ted
 //}
 //
-//let c = Name.Tom.rawValue
+//let c = Name.Tom.rawValue // c = "Tom"
 //let d = "122"
 //
 //if d == Name.Tom.rawValue {

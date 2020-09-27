@@ -39,4 +39,6 @@ extension String {
         
         return String(self[..<self.index(self.startIndex,offsetBy: index)])
     }
+    
+    
 }

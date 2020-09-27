@@ -23,9 +23,9 @@ import UIKit
 */
 
 enum ActionKey : String {
-    case key = "key"
+    case key   = "key"
     case value = "value"
-    case desc = "desc"
+    case desc  = "desc"
 }
 
 enum ActionType {
@@ -86,7 +86,7 @@ class XFDemoTableViewController: UIViewController, UITableViewDataSource, UITabl
         let item = self.dataSource[indexPath.row] as! NSDictionary;
         
         let className = item[ActionKey.value] as! String
-        let type : ActionType = item[ActionKey.key] as! ActionType
+        let type : ActionType = item[ActionKey.key.rawValue] as! ActionType
 		
 		cell?.textLabel?.text = className
         cell?.detailTextLabel?.text = {
@@ -107,7 +107,7 @@ class XFDemoTableViewController: UIViewController, UITableViewDataSource, UITabl
 		let item = self.dataSource[indexPath.row] as! NSDictionary;
 		
 		let value = item[ActionKey.value] as! String
-		let type = item[ActionKey.key] as! ActionType
+        let type = item[ActionKey.key.rawValue] as! ActionType
 		
 		switch type {
 		case .ViewController:

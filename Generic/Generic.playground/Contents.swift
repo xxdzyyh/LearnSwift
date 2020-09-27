@@ -7,9 +7,32 @@ import UIKit
 //
 //let obj = instanceOfClass(object: NSDate.self)
 
+protocol MyProtocol {
+    // Associated types can only be defined in a protocol;
+    associatedtype T
+    func getAssociatedtype(t:T) -> T
+}
+
+extension MyProtocol {
+    func getAssociatedtype(t:T) -> T {
+        print(t)
+        return t
+    }
+}
+
+struct My : MyProtocol<String> {
+    
+}
+
+My().getAssociatedtype(t: "QWEQR")
+
 class Tool<T:NSObject> {
     static func instanceOfClass() -> T {
         return T.init()
+    }
+    
+    func getOwn(own:Own) {
+        print(own)
     }
 }
 

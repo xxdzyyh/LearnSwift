@@ -39,7 +39,11 @@ class MemoryManagerVC: UIViewController {
         
         obj.name = "www"
         
-        debugPrint(obj)
+        let class2 = obj
+        
+        class2.name = "class2"
+        
+        print("\(obj.name) = \(class2.name)")
     }
 
 }
